@@ -1,0 +1,26 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from "./ui/navigation-menu";
+
+const locales = {
+	'fr': 'French',
+	'en': 'English',
+}
+
+// Get current language and current path
+const currentLang = Astro.currentLocale || 'zh-cn';
+const currentPath = Astro.url.pathname
+  .replace(`/${currentLang}/`, '/')  // Remove language prefix
+  .replace(/^\//, '');  // Remove leading slash
+---
+<NavigationMenuItem value="switch">
+{Object.entries(locales).filter(([lang]) => lang !== currentLang).map(([lang, label]) => {
+      const url = getRelativeLocaleUrl(lang, currentPath);
+	  	
+      return (
+        <NavigationMenuLink href={url} } class={`${navigationMenuTriggerStyle()} ${lang === currentLang ? 'active' : ''}`} class="bg-none p-4 font-bold bg-gray-900/50 hover:bg-purple-700/50">
+			{label}
+		</NavigationMenuLink>
+      );
+    })}
+</NavigationMenuItem>

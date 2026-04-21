@@ -1,11 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+import Blogposts from  '@/components/blogposts.astro'
+import { Section, SectionContent, SectionProse } from "@/components/ui/section"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<Section class="bg-slate-900">
+		<SectionContent>
+			<SectionProse class="text-white">
+				<h3>Blabvlablah</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum convallis turpis tincidunt imperdiet. Praesent faucibus, felis eget pretium pulvinar, ipsum massa fringilla ipsum, at fermentum tellus dui in velit. Cras vehicula, diam in hendrerit vulputate, felis lorem varius nibh, sit amet lobortis libero ligula in odio. Sed scelerisque odio massa, in porttitor lorem varius eu. Vivamus lacinia scelerisque convallis. Ut rhoncus ante id enim commodo sagittis. Nunc convallis vitae dui in aliquet.
+
+Sed interdum ac neque nec aliquet. Duis a neque ligula. Cras rhoncus vulputate odio. Nulla vitae risus at nulla viverra fermentum. Praesent iaculis magna et risus ultrices molestie. Proin gravida eu urna vitae facilisis. Sed blandit metus pulvinar justo lacinia efficitur. Fusce et porttitor mi. Maecenas in auctor tellus. Vestibulum sit amet nulla fringilla, mollis orci vel, tristique tellus. Aenean semper, justo eget sodales dignissim, nisl urna imperdiet nibh, vitae sodales nisl diam sit amet magna. Proin et libero sit amet elit vestibulum scelerisque ut eget ante. Suspendisse nec nibh interdum, hendrerit turpis et, pretium mauris. Vivamus placerat malesuada dolor et mollis. Etiam venenatis lorem at augue ornare, quis vulputate nibh ultricies.</p>
+			</SectionProse>
+		</SectionContent>
+	</Section>
+	{/*<Blogposts/>*/}
 </Layout>
