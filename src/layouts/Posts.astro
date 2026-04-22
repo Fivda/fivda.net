@@ -1,0 +1,25 @@
+---
+import Layout from "./Layout.astro";
+import { Section, SectionContent, SectionProse } from "@/components/ui/section";
+const { frontmatter } = Astro.props;
+const date = new Date(frontmatter.pubDate);
+const options = { year: 'numeric', month: 'long', day: '2-digit' };
+const formattedDate = date.toLocaleDateString('en-US', options);
+---
+
+<Layout>
+	<Section class="bg-slate-900">
+		<SectionContent>
+			<SectionProse class="text-white font-bold">
+				<h1>{frontmatter.title}</h1>
+				<h3>Published on {formattedDate}</h3>
+				{
+					frontmatter.tags ? (
+						<h6>{frontmatter.tags.join(', ')}</h6>
+					) : null
+				}
+			</SectionProse>
+			<slot />
+		</SectionContent>
+	</Section>
+</Layout>

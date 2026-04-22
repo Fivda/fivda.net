@@ -38,9 +38,9 @@ const urlFR = getRelativeLocaleUrl("fr", "/");
 	<body class="@container bg-slate-900 text-white">
 		<Section class="bg-cover h-64 flex flex-col p-0 w-full gap-0" style={`background-image: url(${bgStars.src})`}>
 			<SectionContent class="gap-0 p-0 pt-4 h-64">
-				<Header class="bg-transparent p-0 h-1/3 md:h-2/3" >
+				<Header class="bg-transparent p-0 h-1/2 md:h-2/3" >
 					<HeaderContent class="flex justify-center align-middle h-full">
-						<Logo href="/" class="flex-1 w-full align-middle">
+						<Logo href="/" class="flex-1 w-full align-middle ml-4">
 						<LogoImage src={Fivda} alt="Fivda.net" class="w-full h-full object-contain p-2"/>
 						</Logo>
 						<div class="flex max-w-1/2 h-full">
@@ -50,7 +50,7 @@ const urlFR = getRelativeLocaleUrl("fr", "/");
 					</HeaderContent>
 				</Header>
 				
-				<NavigationMenu class="bg-purple-900/30 md:h-1/3 h-2/3 w-full max-w-full justify-center flex">
+				<NavigationMenu class="bg-purple-900/30 md:h-1/2 h-2/3 w-full max-w-full justify-center flex">
 					<NavigationMenuList class="gap-2 w-full font-bold flex flex-wrap flex-row justify-center items-center">
 						<NavigationMenuItem value="home">
 							<NavigationMenuLink href="/" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
