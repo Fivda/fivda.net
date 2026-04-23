@@ -2,7 +2,10 @@
 import Layout from '@/layouts/Layout.astro';
 import Post from '@/components/Post.astro'
 import { Section, SectionContent, SectionProse } from "@/components/ui/section"
+import type { $input } from 'astro:schema';
 const allPosts = Object.values(import.meta.glob('./../pages/posts/*.md', { eager: true }));
+const maxPosts = allPosts.length;
+console.log(maxPosts)
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
 ---
 
@@ -11,7 +14,8 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getT
         <SectionProse class="text-white">
             <h2>Blog Posts</h2>
             <ul class="text-white">
-                {sortedPosts.map((post: any) => <Post class="text-white" url={post.url} title={post.frontmatter.title} />)}
+                {}
+                {sortedPosts.map((post: any) => <Post class="text-white" url={post.url} title={post.frontmatter.title} body={post.rawContent()} />)}
             </ul>
         </SectionProse>
     </SectionContent>

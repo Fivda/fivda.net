@@ -36,10 +36,10 @@ const urlFR = getRelativeLocaleUrl("fr", "/");
 		<title>Fivda.net</title>
 	</head>
 	<body class="@container bg-slate-900 text-white">
-		<Section class="bg-cover h-64 flex flex-col p-0 w-full gap-0" style={`background-image: url(${bgStars.src})`}>
+		<Section class="bg-cover h-64 flex flex-col p-0 w-full gap-0 overflow-auto" style={`background-image: url(${bgStars.src})`}>
 			<SectionContent class="gap-0 p-0 pt-4 h-64">
-				<Header class="bg-transparent p-0 h-1/2 md:h-2/3" >
-					<HeaderContent class="flex justify-center align-middle h-full">
+				<Header class="bg-transparent p-0 h-1/2 md:h-2/3 justify-center flex max-w-full w-full" >
+					<HeaderContent class="flex w-full justify-center align-middle h-full">
 						<Logo href="/" class="flex-1 w-full align-middle ml-4">
 						<LogoImage src={Fivda} alt="Fivda.net" class="w-full h-full object-contain p-2"/>
 						</Logo>
