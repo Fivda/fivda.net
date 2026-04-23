@@ -6,6 +6,9 @@ import Article from '@/components/article-1.astro'
 import { Section, SectionContent, SectionProse } from "@/components/ui/section"
 import Blogposts from '@/components/blogposts.astro';
 
+import Temporary from '@/components/Temporary.astro';
+import TemporaryLayout from '@/layouts/TemporaryLayout.astro';
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -23,3 +26,7 @@ Sed interdum ac neque nec aliquet. Duis a neque ligula. Cras rhoncus vulputate o
 	</Section>
 	<Blogposts />
 </Layout>*/}
+
+<TemporaryLayout>
+	<Temporary />
+</TemporaryLayout>
