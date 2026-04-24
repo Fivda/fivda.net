@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/Posts.astro"
-title: 'Template post 2'
-pubDate: 2026-24-04
+title: 'Template post copy'
+pubDate: 2026-12-04
 description: 'First post.'
 author: 'Robin'
 image:

@@ -4,17 +4,15 @@ import Post from '@/components/Post.astro'
 import { Section, SectionContent, SectionProse } from "@/components/ui/section"
 import type { $input } from 'astro:schema';
 const allPosts = Object.values(import.meta.glob('./../pages/posts/*.md', { eager: true }));
-const maxPosts = allPosts.length;
-console.log(maxPosts)
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
+sortedPosts.splice(sortedPosts.length * -1 + 3);
 ---
 
 <Section class="bg-slate-900 text-white">
     <SectionContent class="text-white">
         <SectionProse class="text-white">
-            <h2>Blog Posts</h2>
+            <h2>Latest blog posts</h2>
             <ul class="text-white">
-                {}
                 {sortedPosts.map((post: any) => <Post class="text-white" url={post.url} title={post.frontmatter.title} body={post.rawContent()} />)}
             </ul>
         </SectionProse>
