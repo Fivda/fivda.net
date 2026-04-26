@@ -6,6 +6,10 @@ import type { $input } from 'astro:schema';
 const allPosts = Object.values(import.meta.glob('./../pages/posts/*.md', { eager: true }));
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
 sortedPosts.splice(sortedPosts.length * -1 + 3);
+function truncate(str, maxlength) {
+return (str.length > maxlength) ? 
+    str.slice(0, maxlength - 1) + '…' : str;
+}
 ---
 
 <Section class="bg-slate-900 text-white">
@@ -13,7 +17,12 @@ sortedPosts.splice(sortedPosts.length * -1 + 3);
         <SectionProse class="text-white">
             <h2>Latest blog posts</h2>
             <ul class="text-white">
-                {sortedPosts.map((post: any) => <Post class="text-white" url={post.url} title={post.frontmatter.title} body={post.rawContent()} />)}
+                {sortedPosts.map((post: any) => {
+                    const shortenedContent = truncate(post.rawContent().trim(), 300);
+                    return (
+                        <Post class="text-white p-12" url={post.url} date={post.frontmatter.pubDate} title={post.frontmatter.title} body={shortenedContent} />
+                    )
+                })}
             </ul>
         </SectionProse>
     </SectionContent>

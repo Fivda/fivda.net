@@ -15,14 +15,18 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Section, SectionContent, SectionProse } from "@/components/ui/section"
 import { Image } from "@/components/ui/image"
+import { Separator } from "@/components/ui/separator"
 import Switcher from "@/components/switcher.astro"
 import Fivda from "@/images/fivda.png"
 import bgStars from "@/images/big_01_space_g.png"
 import logo from "@/images/logo_white.png"
+import FooterFivda from "@/components/FooterFivda.astro"
 import { getRelativeLocaleUrl } from "astro:i18n"
 
 const urlEN = getRelativeLocaleUrl("en", "/");
 const urlFR = getRelativeLocaleUrl("fr", "/");
+
+const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","https://bsky.app/profile/fivda.bsky.social"]
 ---
 
 <!doctype html>
@@ -94,6 +98,10 @@ const urlFR = getRelativeLocaleUrl("fr", "/");
 		</Section>
 		
 		<slot />
+
+		<Separator class="bg-slate-800" />
+		
+		<FooterFivda logo={Fivda} socials={socials} />
 	</body>
 </html>
 
