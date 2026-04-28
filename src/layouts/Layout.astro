@@ -19,14 +19,15 @@ import { Separator } from "@/components/ui/separator"
 import Switcher from "@/components/switcher.astro"
 import Fivda from "@/images/fivda.png"
 import bgStars from "@/images/big_01_space_g.png"
-import logo from "@/images/logo_white.png"
+import logo from "@/images/logo_robin_horizontal_transpa_monochrome_white.png"
 import FooterFivda from "@/components/FooterFivda.astro"
+import favicon from "@/images/favicon.ico"
 import { getRelativeLocaleUrl } from "astro:i18n"
 
 const urlEN = getRelativeLocaleUrl("en", "/");
 const urlFR = getRelativeLocaleUrl("fr", "/");
 
-const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","https://bsky.app/profile/fivda.bsky.social"]
+const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","https://bsky.app/profile/fivda.bsky.social", "mailto:kodamasoft@protonmail.com"]
 ---
 
 <!doctype html>
@@ -35,17 +36,19 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href={favicon} />
 		<meta name="generator" content={Astro.generator} />
 		<title>Fivda.net</title>
 	</head>
 	<body class="@container bg-slate-900 text-white">
-		<Section class="bg-cover h-64 flex flex-col p-0 w-full gap-0 overflow-auto" style={`background-image: url(${bgStars.src})`}>
+		<Section class="bg-cover h-64 flex flex-col p-0 w-full gap-0 overflow-auto backdrop-brightness-150" style={`background-image: url(${bgStars.src})`}>
 			<SectionContent class="gap-0 p-0 pt-4 h-64">
 				<Header class="bg-transparent p-0 h-1/2 md:h-2/3 justify-center flex max-w-full w-full" >
 					<HeaderContent class="flex w-full justify-center align-middle h-full">
 						<Logo href="/" class="flex-1 w-full align-middle ml-4">
-						<LogoImage src={Fivda} alt="Fivda.net" class="w-full h-full object-contain p-2"/>
+							<div class="object-contain p-2 box-content h-full">
+								<LogoImage src={Fivda} alt="Fivda.net" class="w-full h-full rounded-2xl object-contain p-2"/>
+							</div>
 						</Logo>
 						<div class="flex max-w-1/2 h-full">
 							<Image src={logo} alt="Fivda.net" class="h-auto w-auto object-contain" />
@@ -61,17 +64,17 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 								Home
 							</NavigationMenuLink>
 						</NavigationMenuItem>
-						<NavigationMenuItem value="">
+						{/*<NavigationMenuItem value="about">
 							<NavigationMenuLink href="/about" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
 								About
 							</NavigationMenuLink>
-						</NavigationMenuItem>
-						<NavigationMenuItem value="">
+						</NavigationMenuItem>*/}
+						<NavigationMenuItem value="blog">
 							<NavigationMenuLink href="/blog" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
 								Blog
 							</NavigationMenuLink>
 						</NavigationMenuItem>
-						<NavigationMenuItem value="translations">
+						{/*<NavigationMenuItem value="translations">
 							<NavigationMenuLink href="/translations" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
 								Translations
 							</NavigationMenuLink>
@@ -91,7 +94,7 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 								Contact
 							</NavigationMenuLink>
 						</NavigationMenuItem>
-						<Switcher />
+						<Switcher />*/}
 					</NavigationMenuList>
 				</NavigationMenu>
 			</SectionContent>

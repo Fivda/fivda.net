@@ -1,18 +1,22 @@
 ---
 import { Separator } from "./ui/separator";
-const { title, url, body, date } = Astro.props;
+import { Image } from "./ui/image";
+const { title, url, body, date, image } = Astro.props;
 const newDate = new Date(date);
 const options = { year: 'numeric', month: 'long', day: '2-digit' };
 const formattedDate = newDate.toLocaleDateString('en-US', options);
 ---
 
 <Separator />
-<div class="p-6">
+<div class="p-4">
 	<div>
-		<a href={url}>
-			<h3 class="text-white">{title}</h3>
+		<a href={url} class="max-w-min m-8">
+			<h3 class="text-white underline contain-size">{title}</h3>
 		</a>
-		<p class="m-0 text-sm">{formattedDate}</p>
+		{
+			image && <Image src={image.url} alt={image.alt} class="w-1/3"/>
+		}
+		<p class="mt-8 text-sm">{formattedDate}</p>
 	</div>
 	<p>{body}</p>
-</div>
+	</div>

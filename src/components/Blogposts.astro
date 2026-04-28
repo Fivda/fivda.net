@@ -16,14 +16,18 @@ return (str.length > maxlength) ?
     <SectionContent class="text-white">
         <SectionProse class="text-white">
             <h2>Latest blog posts</h2>
-            <ul class="text-white">
-                {sortedPosts.map((post: any) => {
-                    const shortenedContent = truncate(post.rawContent().trim(), 300);
-                    return (
-                        <Post class="text-white p-12" url={post.url} date={post.frontmatter.pubDate} title={post.frontmatter.title} body={shortenedContent} />
-                    )
-                })}
-            </ul>
+            {sortedPosts && sortedPosts.length > 0 ? (
+                <ul class="text-white">
+                    {sortedPosts.map((post: any) => {
+                        const shortenedContent = truncate(post.rawContent().trim(), 300);
+                        return (
+                            <Post class="text-white p-12" url={post.url} date={post.frontmatter.pubDate} image={post.frontmatter.image} title={post.frontmatter.title} body={shortenedContent} />
+                        )
+                    })}
+                </ul>
+            ) : (
+                <p>Nothing to see here.</p>
+            )}
         </SectionProse>
     </SectionContent>
 </Section>
