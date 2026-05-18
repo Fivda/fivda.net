@@ -10,8 +10,8 @@ const formattedDate = newDate.toLocaleDateString('en-US', options);
 <Separator />
 <div class="p-4">
 	<div>
-		<a href={url} class="max-w-min m-8">
-			<h3 class="text-white underline contain-size">{title}</h3>
+		<a href={url} class="m-8 w-fit contents">
+			<h3 class="text-white underline w-max">{title}</h3>
 		</a>
 		{
 			image && <Image src={image.url} alt={image.alt} class="w-1/3"/>
