@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@theme inline {
+  --font-sans: var(--font-ubuntu);
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {

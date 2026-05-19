@@ -1,10 +1,56 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import { Section, SectionProse, SectionActions, SectionContent } from '@/components/ui/section';
+import Image from 'astro/components/Image.astro';
+import fivda from '@/images/fivda.png';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	
+	<Section class="bg-slate-900">
+		<SectionContent>
+			<SectionProse>
+				<h1 class="text-white">Who am I ?</h1>
+			</SectionProse>
+			<SectionProse class="flex flex-row">
+				<div class="flex flex-col flex-1 justify-center">
+					<Image src={fivda} alt="Fivda" width="10000" height="10000" class="w-1/2 h-auto self-center rounded-2xl"/>
+				</div>
+				<div class="flex flex-col flex-2 text-white h-auto bg-slate-950 p-4 rounded-2xl">
+					<h2>Robin (Fivda / DJ ROUGE-GORGE)</h2>
+					<h3 class="underline mt-0!">Music & Visual Arts</h3>
+					<ul>
+						<li>
+							KodamaSoft / KodamaSounds Founder
+						</li>
+						<li>
+							COUNTERFEST RECORDS Founder
+						</li>
+						<li>
+							Sound Producer & DJ
+						</li>
+					</ul>
+					<p>she/her • 28 (June 16th, 1997) • France</p>
+				</div>
+			</SectionProse>
+			<SectionProse class="text-white">
+				<p class="mx-4">Fueled by fiction & creativity (especially Japanese games, music & manga) since I'm young, my entire life thus far has been nothing but a 
+					total focus on what drives and inspires me. Fascinated by interesting sounds and ambitious visuals, I've always been drawn to media that bring out
+					the best aspects of both music and immersive aspects of all visual arts. Even back when I wasn't even a teen, I started drawing comics simply because
+					I felt like it, and already felt a surge of inspiration just from organizing projects with friends. Nowadays, I've got a strong focus on 
+					music, especially in the doujin/DTM scene. God knows what the future has in store for me, but I'm all for discovering new passions.
+					All that I know is that for now, I'd do anything to work even further in the world of music & games!
+				</p>
+			</SectionProse>
+		</SectionContent>
+	</Section>
+	<Section class="bg-slate-900">
+		<SectionContent>
+			<SectionProse>
+				
+			</SectionProse>
+		</SectionContent>
+	</Section>
 </Layout>

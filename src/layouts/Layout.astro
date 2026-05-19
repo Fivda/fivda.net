@@ -1,6 +1,7 @@
 ---
 import Switcher from "@/components/switcher.astro"
 import "@/styles/global.css"
+import { Font } from "astro:assets";
 import { Button } from "@/components/ui/button"
 import { Header, HeaderActions, HeaderContent } from "@/components/ui/header"
 import { Logo, LogoImage, LogoText } from "@/components/ui/logo"
@@ -33,6 +34,7 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 <!doctype html>
 <html lang="en">
 	<head>
+		<Font cssVariable="--font-ubuntu" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
