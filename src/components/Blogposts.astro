@@ -5,7 +5,7 @@ import { Section, SectionContent, SectionProse } from "@/components/ui/section"
 import type { $input } from 'astro:schema';
 const allPosts = Object.values(import.meta.glob('./../pages/posts/*.md', { eager: true }));
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
-sortedPosts.splice(sortedPosts.length * -1 + 3);
+
 function truncate(str, maxlength) {
 return (str.length > maxlength) ? 
     str.slice(0, maxlength - 1) + '…' : str;
@@ -15,11 +15,11 @@ return (str.length > maxlength) ?
 <Section class="bg-slate-900 text-white">
     <SectionContent class="text-white">
         <SectionProse class="text-white">
-            <h2>Latest blog post</h2>
+            <h2>Latest blog posts</h2>
             {sortedPosts && sortedPosts.length > 0 ? (
                 <ul class="text-white">
                     {sortedPosts.map((post: any) => {
-                        const shortenedContent = truncate(post.rawContent().trim(), 300);
+                        const shortenedContent = truncate(post.rawContent().trim(), 100);
                         return (
                             <Post class="text-white p-12" url={post.url} date={post.frontmatter.pubDate} image={post.frontmatter.image} title={post.frontmatter.title} body={shortenedContent} />
                         )
