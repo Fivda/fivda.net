@@ -3,6 +3,13 @@ import Layout from '@/layouts/Layout.astro';
 import { Section, SectionProse, SectionActions, SectionContent } from '@/components/ui/section';
 import Image from 'astro/components/Image.astro';
 import fivda from '@/images/fivda.png';
+import counterfestLogo from "@/images/Logo_DarkOrange_Transparent.png"
+import vinyl from "@/images/vinyl.png"
+import music from "@/images/music.png"
+import kodamasounds from "@/images/kodama.webp"
+import nitw from "@/images/nitw.png"
+import kodamasoft from "@/images/kodamasoft.webp"
+import vgmdb from "@/images/vgmdb.png"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,10 +18,10 @@ import fivda from '@/images/fivda.png';
 <Layout>
 	<Section class="bg-slate-900">
 		<SectionContent>
-			<SectionProse>
-				<h1 class="text-white">Who am I ?</h1>
+			<SectionProse class="max-w-full">
+				<h1 class="text-white text-center">Who am I ?</h1>
 			</SectionProse>
-			<SectionProse class="flex flex-row">
+			<SectionProse class="flex flex-row max-w-full">
 				<div class="flex flex-col flex-1 justify-center">
 					<Image src={fivda} alt="Fivda" width="10000" height="10000" class="w-1/2 h-auto self-center rounded-2xl"/>
 				</div>
@@ -35,8 +42,8 @@ import fivda from '@/images/fivda.png';
 					<p>she/her • 28 (June 16th, 1997) • France</p>
 				</div>
 			</SectionProse>
-			<SectionProse class="text-white">
-				<p class="mx-4">Fueled by fiction & creativity (especially Japanese games, music & manga) since I'm young, my entire life thus far has been nothing but a 
+			<SectionProse class="text-white max-w-full">
+				<p class="mx-4 text-center">Fueled by fiction & creativity (especially Japanese games, music & manga) since I'm young, my entire life thus far has been nothing but a 
 					total focus on what drives and inspires me. Fascinated by interesting sounds and ambitious visuals, I've always been drawn to media that bring out
 					the best aspects of both music and immersive aspects of all visual arts. Even back when I wasn't even a teen, I started drawing comics simply because
 					I felt like it, and already felt a surge of inspiration just from organizing projects with friends. Nowadays, I've got a strong focus on 
@@ -48,8 +55,116 @@ import fivda from '@/images/fivda.png';
 	</Section>
 	<Section class="bg-slate-900">
 		<SectionContent>
-			<SectionProse>
-				
+			<SectionProse class="text-white max-w-full flex flex-col md:flex-row justify-around gap-2">
+				<div class="bg-slate-950 p-4 rounded-2xl flex-1 w-fit h-fit max-w-fit">
+					<h1 class="text-left underline mb-4">Ongoing Projects</h1>
+
+					<div class="flex flex-row">
+						<Image src={counterfestLogo} alt="Counterfest" class="w-16 h-auto self-center p-2 mr-2"/>
+						<div>
+							<h6 class="underline m-0!">Since 2024</h6>
+							<h6 class="m-0! font-bold">COUNTERFEST RECORDS</h6>
+							<p>A new sublabel of KodamaSounds dedicated to our arrange albums & original tek albums, aimed towards free albums inspired by the bootleg & doujin scene.</p>
+						</div>
+					</div>
+
+					<div class="flex flex-row mt-4">
+						<Image src={vinyl} alt="DJing" class="w-16 h-auto self-center p-2 mr-2 invert"/>
+						<div>
+							<h6 class="underline m-0!">Since 2024</h6>
+							<h6 class="m-0! font-bold">DJ Mixing</h6>
+							<p>Started mixing all kinds of genres, and hoping to make live sets sooner or later.</p>
+						</div>
+					</div>
+
+					<div class="flex flex-row mt-4">
+						<Image src={music} alt="Music" class="w-16 h-auto self-center p-2 mr-2 invert"/>
+						<div>
+							<h6 class="underline m-0!">Since 2021</h6>
+							<h6 class="m-0! font-bold">Sound Production / DTM</h6>
+							<p>Producing music on Reaper. In a mostly techno & IDM style, and strives to craft songs in as many genres as possible.</p>
+						</div>
+					</div>
+
+					<div class="flex flex-row mt-4">
+						<Image src={vgmdb} alt="VGMDB" class="w-16 h-auto self-center p-2 mr-2"/>
+						<div>
+							<h6 class="m-0! font-bold">VGMdb Trusted Editor</h6>
+							<p>2000+ albums added & 6000+ albums edited for the database, from VGM to Doujin Music.</p>
+						</div>
+					</div>
+
+					<div class="flex flex-row mt-4">
+						<Image src={kodamasounds} alt="KodamaSounds" class="w-16 h-auto self-center p-2 mr-2"/>
+						<div>
+							<h6 class="underline m-0!">Since 2020</h6>
+							<h6 class="m-0! font-bold">KodamaSounds</h6>
+							<p>Organized and supervised all KodamaSounds releases, featuring community driven arrange and original work albums.
+								20+ hours/albums released, for +300 released songs, with more and more constantly coming.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex flex-row mt-4">
+						<Image src={nitw} alt="NITW" class="w-16 h-auto self-center p-2 mr-2"/>
+						<div>
+							<h6 class="underline m-0!">Since 2019</h6>
+							<h6 class="m-0! font-bold">Night in the Woods French Fantranslator</h6>
+							<p>Sole french fantranslator for Night in the Woods. Planned for completion in 2026.</p>
+						</div>
+					</div>
+
+					<div class="flex flex-row mt-4">
+						<Image src={kodamasoft} alt="KodamaSoft" class="w-16 h-auto self-center p-2 mr-2"/>
+						<div>
+							<h6 class="underline m-0!">Since 2018</h6>
+							<h6 class="m-0! font-bold">KodamaSoft</h6>
+							<p>Founder of a french doujin circle, working on the self developed KODAMA COMET games & visual novel projects.</p>
+						</div>
+					</div>
+				</div>
+				<div class="bg-slate-950 p-4 rounded-2xl flex-1 w-fit h-fit max-w-fit">
+					<h1 class="text-left underline mb-4">Past Projects</h1>
+
+					<div class="flex flex-row mt-4">
+						<div>
+							<h6 class="underline m-0!">2024</h6>
+							<h6 class="m-0! font-bold">A&R for Rolling Bassline Recordings</h6>
+							<p>Contact & management accross worldwide artists on a commercial Hard Techno / Psystyle label.</p>
+						</div>
+					</div>
+				</div>
+			</SectionProse>
+		</SectionContent>
+	</Section>
+	<Section class="bg-slate-900">
+		<SectionContent>
+			<SectionProse class="text-white max-w-full flex flex-col">
+				<div class="bg-slate-950 p-4 rounded-2xl h-fit justify-center">
+					<h1 class="underline text-center">Passions & Likes</h1>
+					<ul>
+						<li>Doujin, Music & DTM</li>
+					</ul>
+					<h1 class="underline text-center">Favorite Things</h1>
+					<div class="flex-row flex flex-wrap">
+						<div class="w-1/2 p-4">
+							<h3>Music Artists</h3>
+							<p class="m-0!">Taishi, Supire</p>
+						</div>
+						<div class="w-1/2 p-4">
+							<h3>Games</h3>
+							<p class="m-0!">Arcaea, Drakenier</p>
+						</div>
+						<div class="w-1/2 p-4">
+							<h3>Anime</h3>
+							<p class="m-0!">Evangelion, Tsuioku-hen</p>
+						</div>
+						<div class="w-1/2 p-4">
+							<h3>Manga/Comics/Books</h3>
+							<p class="m-0!">Houseki no Kuni, Koko no Hito</p>
+						</div>
+					</div>
+				</div>
 			</SectionProse>
 		</SectionContent>
 	</Section>
