@@ -8,8 +8,8 @@ import react from "@astrojs/react";
 export default defineConfig({
   fonts: [{
     provider: fontProviders.fontsource(),
-    name: "Ubuntu",
-    cssVariable: "--font-ubuntu",
+    name: "Outfit",
+    cssVariable: "--font-outfit",
   }],
   image: {
     domains: ["docs.astro.build"],
