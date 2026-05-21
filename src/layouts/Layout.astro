@@ -42,8 +42,8 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 		<meta name="generator" content={Astro.generator} />
 		<title>Fivda.net</title>
 	</head>
-	<body class="@container bg-slate-900 text-white">
-		<Section class="bg-cover h-64 flex flex-col p-0 w-full gap-0 overflow-auto backdrop-brightness-150" style={`background-image: url(${bgStars.src})`}>
+	<body class="@container" style={"background-color: #A27F50"}>
+		<Section class="bg h-64 flex flex-col p-0 w-full gap-0 overflow-auto backdrop-brightness-150" style={"background-color: #4B3832"}>
 			<SectionContent class="gap-0 p-0 pt-4 h-64">
 				<Header class="bg-transparent p-0 h-1/2 md:h-2/3 justify-center flex max-w-full w-full" >
 					<HeaderContent class="flex w-full justify-center align-middle h-full">
@@ -59,40 +59,40 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 					</HeaderContent>
 				</Header>
 				
-				<NavigationMenu class="bg-purple-900/30 md:h-1/2 h-2/3 w-full max-w-full justify-center flex">
+				<NavigationMenu class="md:h-1/2 h-2/3 w-full max-w-full justify-center flex" style={"background-color: #6F4E37"}>
 					<NavigationMenuList class="gap-2 w-full font-bold flex flex-wrap flex-row justify-center items-center">
 						<NavigationMenuItem value="home">
-							<NavigationMenuLink href="/" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Home
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="about">
-							<NavigationMenuLink href="/about" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/about" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								About
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="blog">
-							<NavigationMenuLink href="/blog" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/blog" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Blog
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						{/*<NavigationMenuItem value="translations">
-							<NavigationMenuLink href="/translations" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/translations" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Translations
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="commissions">
-							<NavigationMenuLink href="/commissions" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/commissions" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Commissions
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="credits">
-							<NavigationMenuLink href="/credits" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/credits" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Credits
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="contact">
-							<NavigationMenuLink href="/contact" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/contact" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Contact
 							</NavigationMenuLink>
 						</NavigationMenuItem>*/}
@@ -104,7 +104,7 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 		
 		<slot />
 
-		<Separator class="bg-slate-800" />
+		<Separator class="bg-white" />
 		
 		<FooterFivda logo={Fivda} socials={socials} />
 	</body>

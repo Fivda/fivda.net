@@ -12,16 +12,16 @@ return (str.length > maxlength) ?
 }
 ---
 
-<Section class="bg-slate-900 text-white">
-    <SectionContent class="text-white">
-        <SectionProse class="text-white">
+<Section style={"background-color: #A27F50"}>
+    <SectionContent class="">
+        <SectionProse class="">
             <h2>Latest blog posts</h2>
             {sortedPosts && sortedPosts.length > 0 ? (
-                <ul class="text-white">
+                <ul class="">
                     {sortedPosts.map((post: any) => {
                         const shortenedContent = truncate(post.rawContent().trim(), 100);
                         return (
-                            <Post class="text-white p-12" url={post.url} date={post.frontmatter.pubDate} image={post.frontmatter.image} title={post.frontmatter.title} body={shortenedContent} />
+                            <Post class=" p-12" url={post.url} date={post.frontmatter.pubDate} image={post.frontmatter.image} title={post.frontmatter.title} body={shortenedContent} />
                         )
                     })}
                 </ul>

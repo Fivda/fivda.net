@@ -18,7 +18,7 @@ const currentPath = Astro.url.pathname
       const url = getRelativeLocaleUrl(lang, currentPath);
 	  	
       return (
-        <NavigationMenuLink href={url} } class={`${navigationMenuTriggerStyle()} ${lang === currentLang ? 'active' : ''}`} class="bg-none p-4 font-bold bg-gray-900/50 hover:bg-purple-700/50">
+        <NavigationMenuLink href={url} } class={`${navigationMenuTriggerStyle()} ${lang === currentLang ? 'active' : ''}`} class="bg-none p-4 font-bold bg-yellow-900/50 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 			{label}
 		</NavigationMenuLink>
       );
