@@ -1,3 +1,112 @@
 {
-	"description": "Fueled by fiction & creativity (especially Japanese games, music & manga) since I'm young, my entire life thus far has been nothing but a total focus on what drives and inspires me. Fascinated by interesting sounds and ambitious visuals, I've always been drawn to media that bring out the best aspects of both music and immersive aspects of all visual arts. Even back when I wasn't even a teen, I started drawing comics simply because I felt like it, and already felt a surge of inspiration just from organizing projects with friends. Nowadays, I've got a strong focus on  music, especially in the doujin/DTM scene. God knows what the future has in store for me, but I'm all for discovering new passions. All that I know is that for now, I'd do anything to work even further in the world of music & games!"
+	"description": "Fueled by fiction & creativity (especially Japanese games, music & manga) since I'm young, my entire life thus far has been nothing but a total focus on what drives and inspires me. Fascinated by interesting sounds and ambitious visuals, I've always been drawn to media that bring out the best aspects of both music and immersive aspects of all visual arts. Even back when I wasn't even a teen, I started drawing comics simply because I felt like it, and already felt a surge of inspiration just from organizing projects with friends. Nowadays, I've got a strong focus on  music, especially in the doujin/DTM scene. God knows what the future has in store for me, but I'm all for discovering new passions. All that I know is that for now, I'd do anything to work even further in the world of music & games!",
+	"ongoing" : {
+		"Counterfest" : {
+			"year" : "Since 2024",
+			"title": "COUNTERFEST RECORDS",
+			"description": "A new sublabel of KodamaSounds dedicated to our arrange albums & original tek albums, aimed towards free albums inspired by the bootleg & doujin scene.",
+			"image": "/src/images/Logo_DarkOrange_Transparent.png",
+			"alt": "COUNTERFEST RECORDS logo"
+		},
+		"DJ" : {
+			"year" : "Since 2024",
+			"title": "DJ Mixing",
+			"description": "Started mixing all kinds of genres, and hoping to make live sets sooner or later.",
+			"image": "/src/images/vinyl.png",
+			"alt": "DJ"
+		},
+		"Sound Production" : {
+			"year" : "Since 2021",
+			"title": "Sound Production / DTM",
+			"description": "Producing music on Reaper. In a mostly techno & IDM style, and strives to craft songs in as many genres as possible.",
+			"image": "/src/images/music.png",
+			"alt": "Sound Design"
+		},
+		"VGMDB" : {
+			"title": "VGMdb Trusted Editor",
+			"description": "2000+ albums added & 6000+ albums edited for the database, from VGM to Doujin Music.",
+			"image": "/src/images/vgmdb.png",
+			"alt": "VGMDB Logo"
+		},
+		"KodamaSounds" : {
+			"year" : "Since 2020",
+			"title": "KodamaSounds",
+			"description": "Organized and supervised all KodamaSounds releases, featuring community driven arrange and original work albums. 20+ hours/albums released, for +300 released songs, with more and more constantly coming.",
+			"image": "/src/images/kodama.webp",
+			"alt": "KodamaSounds logo"
+		},
+		"NITW" : {
+			"title": "Night in the Woods French Fantranslator",
+			"description": "Sole french fantranslator for Night in the Woods. Planned for completion in 2026.",
+			"image": "/src/images/nitw.png",
+			"alt": "NITW logo"
+		},
+		"KodamaSoft" : {
+			"year" : "Since 2018",
+			"title": "KodamaSoft",
+			"description": "Founder of a french doujin circle, working on the self developed KODAMA COMET games & visual novel projects.",
+			"image": "/src/images/kodamasoft.webp",
+			"alt": "KodamaSoft logo"
+		}
+	},
+	"past": {
+		"RB" : {
+			"year" : "2024",
+			"title": "A&R for Rolling Bassline Recordings",
+			"description": "Contact & management accross worldwide artists on a commercial Hard Techno / Psystyle label."
+		},
+		"Twitch" : {
+			"year" : "2021",
+			"title": "Twitch Streaming",
+			"description": "Full time & rigorous English + French streams of various games.",
+			"image": "/src/images/twitch.png",
+			"alt": "Twitch logo"
+		},
+		"KodamaSoft" : {
+			"year" : "2019-2023",
+			"title": "140VGM / 140ABGM Co-Founder",
+			"description": "Administration of an account dedicated to posting cuts of VGM+Anime Music. Also hosted an user-requested radio program on Twitch, and interviewed various independant composers."
+		},
+		"Katana Zero" : {
+			"year" : "2019",
+			"title": "Katana Zero Speedrunning",
+			"description": "Light competitor near the game's release, as well as early moderator."
+		},
+		"VGM Quiz" : {
+			"year" : "2018-2022",
+			"title": "VGM Quiz Admin",
+			"description": "Administration of a database and community for a VGM+Anime web music game."
+		},
+		"Youtube" : {
+			"year" : "2017-2018",
+			"title": "Video-Game Critic",
+			"description": "Made Youtube critics & reviews of games of all kinds.",
+			"image": "/src/images/youtube.png",
+			"alt": "Youtube logo"
+		},
+		"Lisa" : {
+			"year" : "2017",
+			"title": "LISA French Fantranslator",
+			"description": "Self-developed a fan localization & fan patch for LISA the Painful & The Joyful in French."
+		},
+		"Kazoo" : {
+			"year" : "2016",
+			"title": "SilvaGunner's Kazoo Master",
+			"description": "Not my proudest."
+		},
+		"VGAOfficialArt" : {
+			"year" : "2016-2018",
+			"title": "VGAOfficialArt Founder",
+			"description": "Posted official artworks & concepts arts of video games and other forms of visual arts."
+		}
+	},
+	"passions": {
+		"name": "Doujin, Music & DTM"
+	},
+	"fav": {
+		"music": "Taishi, Supire",
+		"games": "Arcaea, Drakenier",
+		"anime": "Evangelion, Tsuioku-hen",
+		"manga": "Houseki no Kuni, Koko no Hito"
+	}
 }
