@@ -25,8 +25,13 @@ import FooterFivda from "@/components/FooterFivda.astro"
 import favicon from "@/images/favicon.ico"
 import { getRelativeLocaleUrl } from "astro:i18n"
 
-const urlEN = getRelativeLocaleUrl("en", "/");
-const urlFR = getRelativeLocaleUrl("fr", "/");
+const home = '/' + Astro.currentLocale
+
+const about = '/' + Astro.currentLocale + '/about'
+
+const blog = '/' + Astro.currentLocale + '/blog'
+
+
 
 const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","https://bsky.app/profile/fivda.bsky.social", "mailto:kodamasoft@protonmail.com"]
 ---
@@ -47,7 +52,7 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 			<SectionContent class="gap-0 p-0 pt-4 h-64">
 				<Header class="bg-transparent p-0 h-1/2 md:h-2/3 justify-center flex max-w-full w-full" >
 					<HeaderContent class="flex w-full justify-center align-middle h-full">
-						<Logo href="/" class="flex-1 w-full align-middle ml-4">
+						<Logo href={home} class="flex-1 w-full align-middle ml-4">
 							<div class="object-contain p-2 box-content h-full">
 								<LogoImage src={Fivda} alt="Fivda.net" class="w-full h-full rounded-2xl object-contain p-2"/>
 							</div>
@@ -62,17 +67,17 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 				<NavigationMenu class="md:h-1/2 h-2/3 w-full max-w-full justify-center flex" style={"background-color: #6F4E37"}>
 					<NavigationMenuList class="gap-2 w-full font-bold flex flex-wrap flex-row justify-center items-center">
 						<NavigationMenuItem value="home">
-							<NavigationMenuLink href="/" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
+							<NavigationMenuLink href={home} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Home
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="about">
-							<NavigationMenuLink href="/about" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
+							<NavigationMenuLink href={about} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								About
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="blog">
-							<NavigationMenuLink href="/blog" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
+							<NavigationMenuLink href={blog} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Blog
 							</NavigationMenuLink>
 						</NavigationMenuItem>
