@@ -3,6 +3,8 @@ export const languages = {
   fr: 'Français',
 };
 
+export const showDefaultLang = true;
+
 export const defaultLang = 'en';
 
 export const ui = {
