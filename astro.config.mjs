@@ -27,8 +27,8 @@ export default defineConfig({
       },
       routing: {
           fallbackType: "rewrite",
-          prefixDefaultLocale: true,
-          redirectToDefaultLocale: true
+          prefixDefaultLocale: false,
+          redirectToDefaultLocale: false
       }
 	},
 
