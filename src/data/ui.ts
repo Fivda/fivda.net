@@ -12,7 +12,7 @@ export const ui = {
     'nav.home': 'Home',
     'nav.about': 'About',
     'nav.blog': 'Blog',
-    'index.title': `I'm Robin, also known as Fidva / DJ ROUGE GORGE!`,
+    'index.title': `I'm Robin, also known as Fivda / DJ ROUGE GORGE!`,
     'index.desc1': `This website is my portfolio and showcases who I am, and what I'm working on. You can learn more about me `,
     'index.desc2': 'here',
     'index.desc3': ' and navigate throught the other pages to know more about my works and contact me.',
@@ -25,7 +25,7 @@ export const ui = {
   fr: {
     'nav.home': 'Accueil',
     'nav.about': 'À propos',
-    'index.title': `Je suis Robin, aussi connue comme Fidva / DJ ROUGE GORGE!`,
+    'index.title': `Je suis Robin, aussi connue comme Fivda / DJ ROUGE GORGE!`,
     'index.desc1': `Ce site est mon portfolio et montre qui je suis ainsi que mes projets, et sur quoi je travaille. Vous pouvez en apprendre davantage sur moi `,
     'index.desc2': 'ici',
     'index.desc3': ' et naviguer sur les autres pages pour me contacter et en apprendre plus sur mes travaux.',

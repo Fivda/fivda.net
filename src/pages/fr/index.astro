@@ -24,9 +24,9 @@ const blog = '/' + Astro.currentLocale + '/blog'
 			<SectionProse class="">
 				<h1>{t('index.title')}</h1>
 				<p class="text-justify">{t('index.desc1')}
-					<a href="about" class="! font-bold">{t('index.desc2')}</a> 
+					<a href="about" class="font-bold underline">{t('index.desc2')}</a> 
 					{t('index.desc3')}</p>
-				<p>{t('index.desc4')}<a href={blog} class="! font-bold">{t('index.desc5')}</a>.</p>
+				<p>{t('index.desc4')}<a href={blog} class="font-bold underline">{t('index.desc5')}</a>.</p>
 				<p class="font-bold text-red-200!">{t('index.progress')}</p>
 			</SectionProse>
 		</SectionContent>
