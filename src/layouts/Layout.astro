@@ -25,6 +25,11 @@ import FooterFivda from "@/components/FooterFivda.astro"
 import favicon from "@/images/favicon.ico"
 import { getRelativeLocaleUrl } from "astro:i18n"
 
+import { getLangFromUrl, useTranslations } from '@/data/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const home = '/' + Astro.currentLocale
 
 const about = '/' + Astro.currentLocale + '/about'
@@ -37,7 +42,7 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<Font cssVariable="--font-outfit" />
 		<meta charset="UTF-8" />
@@ -68,17 +73,17 @@ const socials = ["https://x.com/Fivda_","https://www.instagram.com/fivda_","http
 					<NavigationMenuList class="gap-2 w-full font-bold flex flex-wrap flex-row justify-center items-center">
 						<NavigationMenuItem value="home">
 							<NavigationMenuLink href={home} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
-								Home
+								{t('nav.home')}
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="about">
 							<NavigationMenuLink href={about} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
-								About
+								{t('nav.about')}
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="blog">
 							<NavigationMenuLink href={blog} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
-								Blog
+								{t('nav.blog')}
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						{/*<NavigationMenuItem value="translations">

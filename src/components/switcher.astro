@@ -16,7 +16,6 @@ const currentPath = Astro.url.pathname
 ---
 <NavigationMenuItem value="switch">
 {Object.entries(locales).filter(([lang]) => lang !== currentLang).map(([lang, label]) => {
-	  	
       return (
         <NavigationMenuLink href={currentPath === currentLang ? lang : getRelativeLocaleUrl(lang, currentPath)} } class={`${navigationMenuTriggerStyle()} ${lang === currentLang ? 'active' : ''}`} class="bg-none p-4 font-bold bg-yellow-900/50 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 			{label}

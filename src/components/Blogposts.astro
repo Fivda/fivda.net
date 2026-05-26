@@ -3,19 +3,42 @@ import Layout from '@/layouts/Layout.astro';
 import Post from '@/components/Post.astro'
 import { Section, SectionContent, SectionProse } from "@/components/ui/section"
 import type { $input } from 'astro:schema';
-const allPosts = Object.values(import.meta.glob('./../pages/posts/*.md', { eager: true }));
+import { getLangFromUrl, useTranslations } from '@/data/utils';
+
+const lang = Astro.currentLocale
+
+/*if (lang === 'en') {
+    const allPosts = Object.values(import.meta.glob('@/pages/posts/en/*.md', { eager: true }));
+    const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
+} else {
+    const allPosts = Object.values(import.meta.glob('@/pages/posts/fr/*.md', { eager: true }));
+    const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
+}*/
+
+//const allPosts = Object.values(import.meta.glob('@/pages/posts/${lang}/*.md', { eager: true }));
+
+let allPosts = []
+if (lang === 'fr') {
+  allPosts = Object.values(import.meta.glob('@/pages/fr/posts/*.md', { eager: true }))
+} else if (lang === 'en') {
+  allPosts = Object.values(import.meta.glob('@/pages/en/posts/*.md', { eager: true }))
+}
+
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
 
 function truncate(str, maxlength) {
 return (str.length > maxlength) ? 
     str.slice(0, maxlength - 1) + '…' : str;
-}
+}   
+
+const langUI = getLangFromUrl(Astro.url);
+const t = useTranslations(langUI);
 ---
 
 <Section style={"background-color: #A27F50"}>
     <SectionContent class="">
         <SectionProse class="">
-            <h2>Latest blog posts</h2>
+            <h2>{t('blog.title')}</h2>
             {sortedPosts && sortedPosts.length > 0 ? (
                 <ul class="">
                     {sortedPosts.map((post: any) => {
@@ -26,7 +49,7 @@ return (str.length > maxlength) ?
                     })}
                 </ul>
             ) : (
-                <p>Nothing to see here.</p>
+                <p>{t('blog.empty')}</p>
             )}
         </SectionProse>
     </SectionContent>

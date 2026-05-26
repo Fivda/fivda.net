@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Posts.astro"
+layout: "@/layouts/Posts.astro"
 title: 'Template post'
 pubDate: 2001-12-02
 description: 'First post.'
