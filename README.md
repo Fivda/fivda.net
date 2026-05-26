@@ -37,6 +37,7 @@ Now the tools to edit the portfolio :
 - Create a "title.md" file in "src/pages/[lang]/posts" folder
 - Paste this texte at the top of the file :
 
+```
 ---
 layout: "@/layouts/Posts.astro"
 title: 'title'
@@ -48,6 +49,7 @@ image:
     alt: 'alt'
 tags: ["this", "is", "a tag"]
 ---
+```
 
 - Edit the informations of the post as you like.
 - Write your text under the last paragraph.
