@@ -12,14 +12,14 @@
 			"year" : "Since 2024",
 			"title": "DJ Mixing",
 			"description": "Started mixing all kinds of genres, and hoping to make live sets sooner or later.",
-			"image": "/src/images/vinyl.png",
+			"image": "/src/images/control-knobs_1f39b-fe0f.png",
 			"alt": "DJ"
 		},
 		"Sound Production" : {
 			"year" : "Since 2021",
 			"title": "Sound Production / DTM",
 			"description": "Producing music on Reaper. In a mostly techno & IDM style, and strives to craft songs in as many genres as possible.",
-			"image": "/src/images/music.png",
+			"image": "/src/images/musical-keyboard_1f3b9.png",
 			"alt": "Sound Design"
 		},
 		"VGMDB" : {
@@ -53,7 +53,9 @@
 		"RB" : {
 			"year" : "2024",
 			"title": "A&R for Rolling Bassline Recordings",
-			"description": "Contact & management accross worldwide artists on a commercial Hard Techno / Psystyle label."
+			"description": "Contact & management accross worldwide artists on a commercial Hard Techno / Psystyle label.",
+			"image": "/src/images/rbl.png",
+			"alt": "Rolling Bassline logo"
 		},
 		"Twitch" : {
 			"year" : "2021",
@@ -65,7 +67,9 @@
 		"KodamaSoft" : {
 			"year" : "2019-2023",
 			"title": "140VGM / 140ABGM Co-Founder",
-			"description": "Administration of an account dedicated to posting cuts of VGM+Anime Music. Also hosted an user-requested radio program on Twitch, and interviewed various independant composers."
+			"description": "Administration of an account dedicated to posting cuts of VGM+Anime Music. Also hosted an user-requested radio program on Twitch, and interviewed various independant composers.",
+			"image": "/src/images/140vgm.webp",
+			"alt": "140VGM Twitter Icon"
 		},
 		"Katana Zero" : {
 			"year" : "2019",
@@ -75,7 +79,9 @@
 		"VGM Quiz" : {
 			"year" : "2018-2022",
 			"title": "VGM Quiz Admin",
-			"description": "Administration of a database and community for a VGM+Anime web music game."
+			"description": "Administration of a database and community for a VGM+Anime web music game.",
+			"image": "/src/images/vgmq.png",
+			"alt": "VGM Quiz Logo"
 		},
 		"Youtube" : {
 			"year" : "2017-2018",
