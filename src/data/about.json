@@ -1,6 +1,13 @@
 {
 	"description": "Fueled by fiction & creativity (especially Japanese games, music & manga) since I'm young, my entire life thus far has been nothing but a total focus on what drives and inspires me. Fascinated by interesting sounds and ambitious visuals, I've always been drawn to media that bring out the best aspects of both music and immersive aspects of all visual arts. Even back when I wasn't even a teen, I started drawing comics simply because I felt like it, and already felt a surge of inspiration just from organizing projects with friends. Nowadays, I've got a strong focus on  music, especially in the doujin/DTM scene. God knows what the future has in store for me, but I'm all for discovering new passions. All that I know is that for now, I'd do anything to work even further in the world of music & games!",
 	"ongoing" : {
+		"Erithacus View" : {
+			"year" : "Since 2026",
+			"title": "Erithacus View",
+			"description": "My professional self-business! I will choose to go through this whenever doing specific comissioned or non-doujin work of all kinds - music production, booking, translation, advising...",
+			"image": "/src/images/logo_robin_horizontal_transpa_monochrome_white.png",
+			"alt": "Erithacus View Logo (Temporary)"
+		},
 		"Counterfest" : {
 			"year" : "Since 2024",
 			"title": "COUNTERFEST RECORDS",
@@ -12,17 +19,18 @@
 			"year" : "Since 2024",
 			"title": "DJ Mixing",
 			"description": "Started mixing all kinds of genres, and hoping to make live sets sooner or later.",
-			"image": "/src/images/vinyl.png",
+			"image": "/src/images/control-knobs_1f39b-fe0f.png",
 			"alt": "DJ"
 		},
 		"Sound Production" : {
 			"year" : "Since 2021",
 			"title": "Sound Production / DTM",
 			"description": "Producing music on Reaper. In a mostly techno & IDM style, and strives to craft songs in as many genres as possible.",
-			"image": "/src/images/music.png",
+			"image": "/src/images/musical-keyboard_1f3b9.png",
 			"alt": "Sound Design"
 		},
 		"VGMDB" : {
+			"year" : "Since 2021",
 			"title": "VGMdb Trusted Editor",
 			"description": "2000+ albums added & 6000+ albums edited for the database, from VGM to Doujin Music.",
 			"image": "/src/images/vgmdb.png",
@@ -36,8 +44,9 @@
 			"alt": "KodamaSounds logo"
 		},
 		"NITW" : {
+			"year" : "Since 2020",
 			"title": "Night in the Woods French Fantranslator",
-			"description": "Sole french fantranslator for Night in the Woods. Planned for completion in 2026.",
+			"description": "Lead fantranslator for Night in the Woods. Planned for completion in 2026.",
 			"image": "/src/images/nitw.png",
 			"alt": "NITW logo"
 		},
@@ -53,7 +62,9 @@
 		"RB" : {
 			"year" : "2024",
 			"title": "A&R for Rolling Bassline Recordings",
-			"description": "Contact & management accross worldwide artists on a commercial Hard Techno / Psystyle label."
+			"description": "Contact & management accross worldwide artists on a commercial Hard Techno / Psystyle label.",
+			"image": "/src/images/rbl.png",
+			"alt": "Rolling Bassline logo"
 		},
 		"Twitch" : {
 			"year" : "2021",
@@ -65,17 +76,23 @@
 		"KodamaSoft" : {
 			"year" : "2019-2023",
 			"title": "140VGM / 140ABGM Co-Founder",
-			"description": "Administration of an account dedicated to posting cuts of VGM+Anime Music. Also hosted an user-requested radio program on Twitch, and interviewed various independant composers."
+			"description": "Administration of an account dedicated to posting cuts of VGM+Anime Music. Also hosted an user-requested radio program on Twitch, and interviewed various independant composers.",
+			"image": "/src/images/140vgm.webp",
+			"alt": "140VGM Twitter Icon"
 		},
 		"Katana Zero" : {
 			"year" : "2019",
-			"title": "Katana Zero Speedrunning",
-			"description": "Light competitor near the game's release, as well as early moderator."
+			"title": "Katana ZERO Speedrunning",
+			"description": "Light competitor near the game's release, as well as early moderator.",
+			"image": "/src/images/kz.png",
+			"alt": "Katana ZERO (Zero) Sprite"
 		},
 		"VGM Quiz" : {
 			"year" : "2018-2022",
 			"title": "VGM Quiz Admin",
-			"description": "Administration of a database and community for a VGM+Anime web music game."
+			"description": "Administration of a database and community for a VGM+Anime web music game.",
+			"image": "/src/images/vgmq.png",
+			"alt": "VGM Quiz Logo"
 		},
 		"Youtube" : {
 			"year" : "2017-2018",
@@ -87,26 +104,46 @@
 		"Lisa" : {
 			"year" : "2017",
 			"title": "LISA French Fantranslator",
-			"description": "Self-developed a fan localization & fan patch for LISA the Painful & The Joyful in French."
+			"description": "Self-developed a fan localization & fan patch for LISA the Painful & The Joyful in French.",
+			"image": "/src/images/Brad.png",
+			"alt": "Brad Sprite (LISA)"
 		},
 		"Kazoo" : {
 			"year" : "2016",
 			"title": "SilvaGunner's Kazoo Master",
-			"description": "Not my proudest."
+			"description": "Not my proudest.",
+			"image": "/src/images/siiva.png",
+			"alt": "SiIvaGunner Default Channel Icon"
 		},
 		"VGAOfficialArt" : {
 			"year" : "2016-2018",
 			"title": "VGAOfficialArt Founder",
-			"description": "Posted official artworks & concepts arts of video games and other forms of visual arts."
+			"description": "Posted official artworks & concepts arts of video games and other forms of visual arts.",
+			"image": "/src/images/vgaofficialart.jpg",
+			"alt": "VGAOfficialArt Icon"
 		}
 	},
 	"passions": {
-		"name": "Doujin, Music & DTM"
+		"1": "Music, Music, and Music!!! especially...",
+		"2": "...Ambient/Atmospheric Stuff (IDM, Techno, Electronica...)",
+		"3": "...Emotional/Uplifting Stuff (Trance, Progressive House, Artcore...)",
+		"4": "...Whacky Stuff (Hardtek, Breakcore, Bootleg Culture...)",
+		"5": "Video Games, especially...",
+		"6": "...Arcade Games (Rhythm, STGs), as well as Visual Novels & Narrative Games",
+		"7": "...Game Music of the things above! ...and a lot of more video game music, really.",
+		"9": "Archiving / Collecting / Tagging Digital Libraries",
+		"10": "Denpa, Chuni & Late 90's Otaku Aesthetics",
+		"11": "Fashion, especially victorian maid/lolita fashion",
+		"12": "Japanese Animation & Manga",
+		"13": "Cold Seasons, Night Time, Cozy Vibes",
+		"14": "Experimental Arts",
+		"15": "Meeting new people and horizons, exchanging passionately with all kinds of people",
+		"17": "Sharing love, care and passion"
 	},
 	"fav": {
-		"music": "Taishi, Supire",
-		"games": "Arcaea, Drakenier",
-		"anime": "Evangelion, Tsuioku-hen",
-		"manga": "Houseki no Kuni, Koko no Hito"
+		"music": "Supire, Taishi, Silentroom, uytrere, Feryquitous, zts, aran, HIROSHI WATANABE, bermei.inazawa, Camellia, MONACA, crayvxn, Nhato, 猫叉Master, Annabel, icesawder, Frums, Yuki Kajiura, Ichiko Aoba, Amos Roddy, kensuke ushio, lapix, Kendrick Lamar, Yuta Imai, Kyohei Akagawa, Disiz, The Japanese House, GOETIΛ, Tyler The Creator, SANY-ON / DENPA-SAMPLER, 黒皇帝, Baths, -45, Yoko Kanno, lycoriscoris, Masashi Hamauzu, Jon Hopkins, Yooh, Shiro SAGISU, BlackY, Ujico* / Snail's House, BlackY, sanmal, のとを, ALEPH, Lifeformed, Serph, Taku Iwasaki, moyu, sasakure.UK, KARUT, haruka nakamura, The Marías, Nujabes, underscores, Hommarju, SuperSweep, 23wa, Disasterpeace, Lucy0 Rose, Denzel Curry, polysha, zohryu, Aniel, callasoiled, LTJ Bukem, Ray_Oh, Tektheist, Hikaru Utada, KASHIWA Daisuke, PSYQUO, b/q studio, AKA, eili, Hiroyuki Arakawa, KaNa, Low Roar, void(Mournfinale), *-Teris... wait, you're still reading?",
+		"games": "SIGNALIS, Drakengard / NieR Series, Higurashi / Umineko When They Cry, Touhou Project, Xenogears, Arcaea, BEMANI, LISA, Metal Gear Series, Persona 3, TYPE-MOON (Fate/, Tsukihime...), MOTHER Series, Cave Story, Katamari Series, SUDA51 Games (No More Heroes, killer7, Silver Case...), Zero Escape Series, Muv-Luv, Silent Hill 2, 13 Sentinels: Aegis Rim, ACE COMBAT 3 electrosphere, Hyper Light Drifter, 3D Zelda Games, Shadow of the Colossus, UNDERTALE / DELTARUNE, WACCA, Kingdom Hearts Series, Yakuza Series, Death Stranding, FINAL FANTASY VII, CAVE Games (DoDonPachi, Mushihimesama...), Disco Elysium, Citizen Sleeper, Katana ZERO, VA-11 Hall-A, Resident Evil Series, Limbus Company, 2D Metroid Games, Celeste, Furi, OFF, Muramasa, Fire Emblem Path of Radiance / Radiant Dawn, Pikmin Series...",
+		"movie": "Evangelion (TV / Rebuilds), Tsuioku-hen, Kino's Journey, Madoka Magica, Before Sunset/Sunrise, Gunbuster,  Liz and the Blue Bird, Maquia, Love Exposure, It's Always Sunny in Philadelphia, Kara no Kyoukai, Breaking Bad / Better Call Saul, Ghost in the Shell (Movies/TV), Wolf Children, The Hunt, Kaiba, Trailer Park Boys, Bojack Horseman, Kyousogiga, Gurren Lagann, Twin Peaks, GIRLS BAND CRY, Nichijou, Alien, Mushishi, Parasite, Ping Pong, Kaiji",
+		"manga": "Houseki no Kuni, Fire Punch, Koko no Hito, Flowers of Evil, Boogiepop, Strongest Man Kurosawa, Kabi Nagata Biographies, Mob Psycho 100, Look Back, Planetes, Fullmetal Alchemist, How do We Relationship, Devilman, Yotsuba&!, Chainsaw Man, Dragon Ball, A Silent Voice, Food DIary of Miss Maid, Dungeon Meshi"
 	}
 }
