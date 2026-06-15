@@ -42,9 +42,9 @@ const t = useTranslations(langUI);
             {sortedPosts && sortedPosts.length > 0 ? (
                 <ul class="">
                     {sortedPosts.map((post: any) => {
-                        const shortenedContent = truncate(post.rawContent().trim(), 100);
+                        //const shortenedContent = truncate(post.rawContent().trim(), 100);
                         return (
-                            <Post class="p-12" url={post.url} date={post.frontmatter.pubDate} image={post.frontmatter.image} title={post.frontmatter.title} body={shortenedContent} />
+                            <Post class="p-12" url={post.url} date={post.frontmatter.pubDate} image={post.frontmatter.image} title={post.frontmatter.title} body={post.frontmatter.description} tags={post.frontmatter.tags} />
                         )
                     })}
                 </ul>
