@@ -1,0 +1,146 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { Section, SectionProse, SectionActions, SectionContent } from '@/components/ui/section';
+import Image from 'astro/components/Image.astro';
+import fivda from '@/images/fivda.png';
+import counterfestLogo from "@/images/Logo_DarkOrange_Transparent.png"
+import vinyl from "@/images/vinyl.png"
+import music from "@/images/music.png"
+import kodamasounds from "@/images/kodama.webp"
+import nitw from "@/images/nitw.png"
+import kodamasoft from "@/images/kodamasoft.webp"
+import vgmdb from "@/images/vgmdb.png"
+import youtube from "@/images/youtube.png"
+import twitch from "@/images/twitch.png"
+
+import about from "@/data/about.json";
+import Project from "@/components/Project.astro";
+
+const BIRTHDAY: Date = new Date(1997, 5, 16);
+const TODAY: Date = new Date();
+
+const AGE_IN_MS: number = TODAY.getTime() - BIRTHDAY.getTime();
+const AGE_IN_YEARS: number = AGE_IN_MS / (1000 * 60 * 60 * 24 * 365.25);
+
+const AGE: number = Math.floor(AGE_IN_YEARS);
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<Section style={"background-color: #A27F50"}>
+		<SectionContent>
+			<SectionProse class="max-w-full">
+				<h1 class=" text-center">Who am I ?</h1>
+			</SectionProse>
+			<SectionProse class="flex flex-row max-w-full">
+				<div class="flex flex-col flex-1 justify-center text-center">
+					<Image src={fivda} alt="Fivda" width="10000" height="10000" class="w-1/2 h-auto self-center rounded-2xl"/>
+					<span class="font-bold text-xs italic p-2">Illust: <a href="https://x.com/miyama_bot">@miyama_bot</a></span>
+				</div>
+				<div class="flex flex-col flex-2  h-auto p-4 rounded-2xl" style={"background-color: #4B3832"}>
+					<h2>Robin (Fivda / DJ ROUGE-GORGE)</h2>
+					<h3 class="underline mt-0!">Music & Visual Arts</h3>
+					<ul>
+						<li>
+							KodamaSoft / KodamaSounds Founder
+						</li>
+						<li>
+							COUNTERFEST RECORDS Founder
+						</li>
+						<li>
+							Sound Producer & DJ
+						</li>
+					</ul>
+					<p>she/her • {AGE} (June 16th, 1997) • France</p>
+				</div>
+			</SectionProse>
+			<SectionProse class=" max-w-full">
+				<p class="mx-4 text-center">
+					{about.description}
+				</p>
+			</SectionProse>
+		</SectionContent>
+	</Section>
+	<Section style={"background-color: #A27F50"}>
+		<SectionContent>
+			<SectionProse class=" max-w-full flex flex-col md:flex-row justify-around gap-2">
+				<div class="p-4 rounded-2xl flex-1 w-fit h-fit max-w-fit" style={"background-color: #4B3832"}>
+					<h1 class="text-left underline mb-4">Ongoing Projects</h1>
+
+					{Object.entries(about.ongoing).map(([key, project]) => (
+							<Project
+								imagePath={project.image}
+								alt={project.alt}
+								year={project.year}
+								description={project.description}
+								title={project.title}
+							/>
+						))
+					}
+
+				</div>
+				<div class="p-4 rounded-2xl flex-1 w-fit h-fit max-w-fit" style={"background-color: #4B3832"}>
+					<h1 class="text-left underline mb-4">Past Projects</h1>
+
+					{Object.entries(about.past).map(([key, project]) => (
+							<Project
+								imagePath={project.image}
+								alt={project.alt}
+								year={project.year}
+								description={project.description}
+								title={project.title}
+							/>
+						))
+					}
+
+				</div>
+			</SectionProse>
+		</SectionContent>
+	</Section>
+	<Section style={"background-color: #A27F50"}>
+		<SectionContent>
+			<SectionProse class=" max-w-full flex flex-col">
+				<div class="p-4 rounded-2xl h-fit justify-center" style={"background-color: #4B3832"}>
+					<h1 class="underline text-center">Passions, Likes and Ideals</h1>
+					<ul class="p-6">
+
+						{Object.entries(about.passions).map(([key, passion]) => (
+								<li>{passion}</li>
+							))
+						}
+
+					</ul>
+					<h1 class="underline text-center">Favorite Things</h1>
+					<div class="flex-row flex flex-wrap">
+						<div class="w-1/2 p-6">
+							<h3>Music Artists</h3>
+
+								<p class="m-0!">{about.fav.music}</p>
+							
+						</div>
+						<div class="w-1/2 p-6">
+							<h3>Games</h3>
+
+							<p class="m-0!">{about.fav.games}</p>
+
+						</div>
+						<div class="w-1/2 p-6">
+							<h3>Cinema / Animation / Shows</h3>
+
+							<p class="m-0!">{about.fav.movie}</p>
+
+						</div>
+						<div class="w-1/2 p-6">
+							<h3>Manga/Comics/Books</h3>
+
+							<p class="m-0!">{about.fav.manga}</p>
+							
+						</div>
+					</div>
+				</div>
+			</SectionProse>
+		</SectionContent>
+	</Section>
+</Layout>

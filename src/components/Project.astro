@@ -1,0 +1,32 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from "astro:assets"
+
+interface Props {
+	imagePath?: string;
+	alt?: string;
+	title: string;
+	year?: number;
+	description: string;
+}
+
+const { imagePath, alt, year, title, description } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/*.{jpeg,jpg,png,webp}')
+//if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/images/*.{jpeg,jpg,png,gif}"`);
+---
+
+
+<div class="flex flex-row py-2">
+	{imagePath && (
+		<Image
+			src={images[imagePath]()}
+			alt={alt}
+			class="w-16 h-auto self-center p-2 mr-2"
+		/>
+	)}
+	<div>
+		<h6 class="underline m-0!">{year}</h6>
+		<h6 class="m-0! font-bold">{title}</h6>
+		<p class="mt-0! leading-tight!">{description}</p>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import test from  '@/pages/posts/test.md'
+import Article from '@/components/article-1.astro'
+import { Section, SectionContent, SectionProse } from "@/components/ui/section"
+
+import Temporary from '@/components/Temporary.astro';
+import TemporaryLayout from '@/layouts/TemporaryLayout.astro';
+
+import { getLangFromUrl, useTranslations } from '@/data/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const blog = '/' + Astro.currentLocale + '/blog'
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<Section style={"background-color: #A27F50"}>
+		<SectionContent>
+			<SectionProse class="">
+				<h1>{t('index.title')}</h1>
+				<p class="text-justify">{t('index.desc1')}
+					<a href="about" class="font-bold underline">{t('index.desc2')}</a> 
+					{t('index.desc3')}</p>
+				<p>{t('index.desc4')}<a href={blog} class="font-bold underline">{t('index.desc5')}</a>.</p>
+				<p class="font-bold text-red-200!">{t('index.progress')}</p>
+			</SectionProse>
+		</SectionContent>
+	</Section>
+</Layout>
+
+{/*<TemporaryLayout>
+	<Temporary />
+</TemporaryLayout>*/}

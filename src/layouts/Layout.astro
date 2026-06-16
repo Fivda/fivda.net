@@ -1,6 +1,7 @@
 ---
 import Switcher from "@/components/switcher.astro"
 import "@/styles/global.css"
+import { Font } from "astro:assets";
 import { Button } from "@/components/ui/button"
 import { Header, HeaderActions, HeaderContent } from "@/components/ui/header"
 import { Logo, LogoImage, LogoText } from "@/components/ui/logo"
@@ -15,73 +16,96 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Section, SectionContent, SectionProse } from "@/components/ui/section"
 import { Image } from "@/components/ui/image"
+import { Separator } from "@/components/ui/separator"
 import Switcher from "@/components/switcher.astro"
 import Fivda from "@/images/fivda.png"
 import bgStars from "@/images/big_01_space_g.png"
-import logo from "@/images/logo_white.png"
+import logo from "@/images/logo_robin_horizontal_transpa_monochrome_white.png"
+import FooterFivda from "@/components/FooterFivda.astro"
+import favicon from "@/images/favicon.ico"
 import { getRelativeLocaleUrl } from "astro:i18n"
 
-const urlEN = getRelativeLocaleUrl("en", "/");
-const urlFR = getRelativeLocaleUrl("fr", "/");
+import { getLangFromUrl, useTranslations } from '@/data/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const home = '/' + Astro.currentLocale
+
+const about = '/' + Astro.currentLocale + '/about'
+
+const blog = '/' + Astro.currentLocale + '/blog'
+
+
+
+const socials = ["mailto:fivda@protonmail.com", "https://x.com/Fivda_", "https://bsky.app/profile/fivda.bsky.social", "discord: Fivda", "https://www.youtube.com/c/Fivda", "https://soundcloud.com/fivda/", "https://fivda.bandcamp.com", "https://www.mixcloud.com/Fivda/", "https://open.spotify.com/artist/75Kv4UNjg8e2WYti6AT4VM", "https://music.apple.com/artist/fivda/1683189527", "https://www.deezer.com/artist/210299767", "https://www.instagram.com/fivda_", ]
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
+		<Font cssVariable="--font-outfit" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" href={favicon} />
 		<meta name="generator" content={Astro.generator} />
-		<title>Fivda.net</title>
+		<title>Fivda / Erithacus View</title>
 	</head>
-	<body class="@container bg-slate-900 text-white">
-		<Section class="bg-cover h-64 flex flex-col p-0 w-full gap-0 overflow-auto" style={`background-image: url(${bgStars.src})`}>
+	<body class="@container" style={"background-color: #A27F50"}>
+		<Section class="bg h-64 flex flex-col p-0 w-full gap-0 overflow-auto backdrop-brightness-150" style={"background-color: #4B3832"}>
 			<SectionContent class="gap-0 p-0 pt-4 h-64">
 				<Header class="bg-transparent p-0 h-1/2 md:h-2/3 justify-center flex max-w-full w-full" >
 					<HeaderContent class="flex w-full justify-center align-middle h-full">
-						<Logo href="/" class="flex-1 w-full align-middle ml-4">
-						<LogoImage src={Fivda} alt="Fivda.net" class="w-full h-full object-contain p-2"/>
+						<Logo href={home} class="flex-1 w-full align-middle ml-4">
+							<div class="object-contain p-2 box-content h-full">
+								<LogoImage src={Fivda} alt="Fivda.net" class="w-full h-full rounded-2xl object-contain p-2"/>
+							</div>
 						</Logo>
-						<div class="flex max-w-1/2 h-full">
-							<Image src={logo} alt="Fivda.net" class="h-auto w-auto object-contain" />
-						</div>
+							<a href={home} class="flex max-w-1/2 h-full">
+								<Image src={logo} alt="Fivda.net" class="h-auto w-auto object-contain" />
+							</a>
 						<div class="flex-1"></div>
 					</HeaderContent>
 				</Header>
 				
-				<NavigationMenu class="bg-purple-900/30 md:h-1/2 h-2/3 w-full max-w-full justify-center flex">
+				<NavigationMenu class="md:h-1/2 h-2/3 w-full max-w-full justify-center flex" style={"background-color: #6F4E37"}>
 					<NavigationMenuList class="gap-2 w-full font-bold flex flex-wrap flex-row justify-center items-center">
 						<NavigationMenuItem value="home">
-							<NavigationMenuLink href="/" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
-								Home
+							<NavigationMenuLink href={home} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
+								{t('nav.home')}
 							</NavigationMenuLink>
 						</NavigationMenuItem>
-						<NavigationMenuItem value="">
-							<NavigationMenuLink href="/about" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
-								About
+						<NavigationMenuItem value="about">
+							<NavigationMenuLink href={about} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
+								{t('nav.about')}
 							</NavigationMenuLink>
 						</NavigationMenuItem>
-						<NavigationMenuItem value="translations">
-							<NavigationMenuLink href="/translations" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+						<NavigationMenuItem value="blog">
+							<NavigationMenuLink href={blog} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
+								{t('nav.blog')}
+							</NavigationMenuLink>
+						</NavigationMenuItem>
+						{/*<NavigationMenuItem value="translations">
+							<NavigationMenuLink href="/translations" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Translations
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="commissions">
-							<NavigationMenuLink href="/commissions" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/commissions" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Commissions
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="credits">
-							<NavigationMenuLink href="/credits" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/credits" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Credits
 							</NavigationMenuLink>
 						</NavigationMenuItem>
 						<NavigationMenuItem value="contact">
-							<NavigationMenuLink href="/contact" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover:text-white focus:bg-purple-700/70 hover:bg-purple-700/50">
+							<NavigationMenuLink href="/contact" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Contact
 							</NavigationMenuLink>
-						</NavigationMenuItem>
+						</NavigationMenuItem>*/}
 						<Switcher />
 					</NavigationMenuList>
 				</NavigationMenu>
@@ -89,6 +113,10 @@ const urlFR = getRelativeLocaleUrl("fr", "/");
 		</Section>
 		
 		<slot />
+
+		<Separator class="bg-white" />
+		
+		<FooterFivda logo={Fivda} socials={socials} />
 	</body>
 </html>
 
