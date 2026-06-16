@@ -46,7 +46,7 @@ const { logo, description, links, socials } = Astro.props
         ))
       }
     </FooterMenu>
-    <FooterMenu orientation="horizontal">
+    <FooterMenu class="wrap-anywhere max-w-full flex-wrap justify-center mx-2" orientation="horizontal">
       {
         socials?.map((social) => {
           if (social === "https://bsky.app/profile/fivda.bsky.social") {
