@@ -19,7 +19,7 @@ A relatively uninspired name (Erithacus rubecula, being the scientific name of t
 
 Other than that, welcome to fivda.net, which is my long overdue personal website. You will be able to check out my (mostly complete) list of works of all kinds/credits, follow some news about my creative journey, and eventually read some (more or less) interesting bits and pieces about my ramblings on creative arts as a whole. I've been working on a little guide about M3 prep, which I hope to make available soon enough. My fantranslation works (LISA and soon Night in the Woods) will also get some dedicated sections on this website.
 
-The website is also planned to feature multi-language support, prioritizing English, and I'll try to use french as much as possible too. For now, you can check out my [url=https://fivda.met/about]About[/url] page which tells a bit more about myself, and my favorite pieces of art! Just... expect a lot of namedropping down there. Site is still a big work in progress, but the very essential is at least there, making it ready for launch.
+The website is also planned to feature multi-language support, prioritizing English, and I'll try to use french as much as possible too. For now, you can check out my <u><a href="https://fivda.met/about">About</a></u> page which tells a bit more about myself, and my favorite pieces of art! Just... expect a lot of namedropping down there. Site is still a big work in progress, but the very essential is at least there, making it ready for launch.
 
 Expect some more in the future, and thank you for checking the website out!
 
