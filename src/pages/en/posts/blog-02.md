@@ -31,24 +31,24 @@ At this time, the event still happens at Tokyo Ryuutsu Center. You can try to lo
 ![Astro](https://fivda.s-ul.eu/dDGJ4CvI)
 
 A few days (weeks?) before the event, you should normally receive an A4 sized package at the address you indicated for the registration. The content is as follows:
-• A 12 page magazine with a lot of very detailed instructions about the event organization. Obviously only in Japanese, and it does seem to have a lot of interesting information about managing your online space as well as guidelines for tables, the CD listening room… But as of right now I still cannot read and translate proper Japanese, and I think Yanis has more important things to deal with right now than translating a 12 page booklet. Maybe I will go back to this when I will be able to (one day, hopefully). I just suggest Google Lensing the booklet a bit to check if it has anything noteworthy of your attention that is not mentioned in this guide.
-• A mat A4 page containing information about the event, and most importantly, your entry bracelets. The amount of staff entry bracelets seems to vary from one event to another. For M3-2025 Fall, it was 3 bracelets in our case. Apparently you can ask for more before the event, but you have to pay an extra. The back side of the page also has a few tickets which you use for the CD listening room for advertising. We didn’t use it, so I will not mention it in this guide for now. It helps, but it’s not mandatory.
-• A folded A3 map of the venue. I’m not sure how much the plan changes across years, but either way, I strongly recommend you to not hesitate and to go ahead and actually write anything meaningful on there. Honestly, you may as well just put the circle names you’re interested in, hell, maybe even plan and scribble a route ahead of time to save as much time as possible when you’ll use it. Physically navigating isn’t that hard, but it’s easier when you can mentally map ahead of time.
+- A 12 page magazine with a lot of very detailed instructions about the event organization. Obviously only in Japanese, and it does seem to have a lot of interesting information about managing your online space as well as guidelines for tables, the CD listening room… But as of right now I still cannot read and translate proper Japanese, and I think Yanis has more important things to deal with right now than translating a 12 page booklet. Maybe I will go back to this when I will be able to (one day, hopefully). I just suggest Google Lensing the booklet a bit to check if it has anything noteworthy of your attention that is not mentioned in this guide.
+- A mat A4 page containing information about the event, and most importantly, your entry bracelets. The amount of staff entry bracelets seems to vary from one event to another. For M3-2025 Fall, it was 3 bracelets in our case. Apparently you can ask for more before the event, but you have to pay an extra. The back side of the page also has a few tickets which you use for the CD listening room for advertising. We didn’t use it, so I will not mention it in this guide for now. It helps, but it’s not mandatory.
+- A folded A3 map of the venue. I’m not sure how much the plan changes across years, but either way, I strongly recommend you to not hesitate and to go ahead and actually write anything meaningful on there. Honestly, you may as well just put the circle names you’re interested in, hell, maybe even plan and scribble a route ahead of time to save as much time as possible when you’ll use it. Physically navigating isn’t that hard, but it’s easier when you can mentally map ahead of time.
 
 ## Physical Material
 This is a real event, and that means real physical preparation. Remember that you’ll be at an event site, with a lot of people, not much room or space, and you will need to come prepared and have everything you need on hand so you don’t catch yourself missing important material which might put you in an awkward position. I will first be mentioning a list of items, and will be detailing the reason and how to provide for them down below.
- • Lightweight backpack
- • Portable pouch or wallet
- • A safe for change/coins, with spare 500 yen coins
- • Portable Battery
- • ID Badge
- • Acrylic Stands (CDs and Price Sheets)
- • Tablecloth
- • Business Cards (Meishi) (Between 50 and 100)
- • Sharpies and Markers (Black and White ones)
- • One or two pens
- • Your banner + a banner stand
- • A suitcase for most things, including your CDs
+- Lightweight backpack
+- Portable pouch or wallet
+- A safe for change/coins, with spare 500 yen coins
+- Portable Battery
+- ID Badge
+- Acrylic Stands (CDs and Price Sheets)
+- Tablecloth
+- Business Cards (Meishi) (Between 50 and 100)
+- Sharpies and Markers (Black and White ones)
+- One or two pens
+- Your banner + a banner stand
+- A suitcase for most things, including your CDs
 For a lot of these, I assume you are already in Japan. Thankfully, it’s actually easier to get those in the country than bringing it over, for even cheaper than going to Amazon and whatnot, ordering stuff you’re not even sure is a good fit for what you’re looking for.
 
 ## Table Preparation
