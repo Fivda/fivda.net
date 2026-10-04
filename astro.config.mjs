@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
+import { satteri, satteriHeadingIdsPlugin } from '@astrojs/markdown-satteri';
 import tailwindcss from "@tailwindcss/vite";
 
 import react from "@astrojs/react";
@@ -18,6 +19,13 @@ export default defineConfig({
         protocol: "https"
       }
     ]
+  },
+  markdown: {
+    processor: satteri({
+      hastPlugins: [
+        satteriHeadingIdsPlugin()
+      ],
+    }),
   },
   i18n: {
       locales: ["fr", "en"],
