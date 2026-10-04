@@ -2,7 +2,7 @@
 layout: "@/layouts/Posts.astro"
 title: 'The M3 Guide for Gaijins'
 pubDate: 2026-10-04
-description: 'An in-depth guide at the does and don't of the M3 festival'
+description: "An in-depth guide at the does and don't of the M3 festival"
 author: 'Robin'
 image:
     url: 'https://fivda.s-ul.eu/yEd4QcWI'
