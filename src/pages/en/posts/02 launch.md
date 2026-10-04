@@ -9,10 +9,11 @@ image:
     alt: 'Doodle of an overwhelmed Robin in front of the M3 panel at Tokyo Ryutsu Center.'
 tags: ["update"]
 ---
-# Preface**
+
+## Preface
+
 M3 is a phenomenal event that anyone somewhat related to the DTM/Doujin community needs to experience at least once in their lifetime. Whether you are a fan or a producer yourself, it is a once in a lifetime chance (for most Europeans and Americans, and other people in very far away countries, which I assume is who this guide will help out the most). This guide will not be talking about “what’s M3”, “how to create/organize a doujin circle”, or “what is doujin music” (though doing a more general English guide not unlike poniyama’s excellent article isn’t a bad idea). I will also NOT be elaborating how to bring your albums to life physically, and this guide is written assuming you already know what M3 is, what you’re getting into, with a general idea of what to expect, and assumes that you already know how to take care of releasing your own physical stock of albums.
 Now that we’ve scared off enough people to get down to the very details of the core of M3 - it’s time to explain why I’m doing such a niche and specific guide in the first place. This guide is aimed with circle participants in mind, and not going in as a fan. Although some advice can apply to everyone, this mainly concerns circle participants.
-
 
 
 Here's to our first blogpost on the website!
