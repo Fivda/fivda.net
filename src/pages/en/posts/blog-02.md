@@ -1,6 +1,6 @@
 ---
 layout: "@/layouts/Posts.astro"
-title: 'The M3 Guide for Gaijins'
+title: 'The M3 Guide for Gaijins Circle Participants'
 pubDate: 2026-10-04
 description: "An in-depth guide at the dos and don'ts of the M3 festival"
 author: 'Robin'
@@ -9,12 +9,15 @@ image:
     alt: 'Doodle of an overwhelmed Robin in front of the M3 panel at Tokyo Ryutsu Center.'
 tags: ["guide"]
 ---
-## Preface
+# Preface
 M3 is a phenomenal event that anyone somewhat related to the DTM/Doujin community needs to experience at least once in their lifetime. Whether you are a fan or a producer yourself, it is a once in a lifetime chance (for most Europeans and Americans, and other people in very far away countries, which I assume is who this guide will help out the most). This guide will not be talking about “what’s M3”, “how to create/organize a doujin circle”, or “what is doujin music” (though doing a more general English guide <u><a href="https://note.com/poniyama_com/n/n534d6709cce0">not unlike poniyama’s excellent article</a></u> isn’t a bad idea). I will also NOT be elaborating how to bring your albums to life physically, and **this guide is written assuming you already know what M3 is, what you’re getting into, with a general idea of what to expect, and assumes that you already know how to take care of releasing your own physical stock of albums.**
 
 Now that we’ve scared off enough people to get down to the very details of the core of M3 - it’s time to explain why I’m doing such a niche and specific guide in the first place. This guide is aimed with circle participants in mind, and not going in as a fan. Although some advice can apply to everyone, this mainly concerns circle participants.
 
-## Personal Experience
+![Astro](https://fivda.s-ul.eu/wJF6Po6L)
+
+# Personal Experience
+(You can skip to "Organization, Timing, Mapping" if you want to skip the rambling)
 My first experience of M3 (M3-2025 Fall) was quite grey. It truly was an event I will cherish and treasure all of my life, but it was also filled with many hardships and physical/mental strain which could have been easily avoided. The difficulties I went through kind of toned down the true euphoria I could have felt back then. As happy as I was to have met so many artists and friends, there was a lot I missed out on due to poor scheduling, and mostly - I had strictly no idea what to expect, and very few people to turn to aside from my friends. This goes from the perspective of someone who had to **HOST** a booth, unable to speak Japanese, but I also had to juggle between two different booths with absolutely no idea what I got myself into.
 
 Time passed by like a flash of lightning, and this was one of the first time in my life I genuinely went through an actual panic attack when the event was over. I’m not here to scare you off, but I feel that it’s worth mentioning that the event can take a toll on you if you struggle with social difficulties, anxiety, ADHD, autism or anything within that spectrum. I consider myself a very social and friendly individual, but the event did test the limits of my tolerance for anxiety - and that’s mainly because I went through it thinking I would have enough time and room to do anything I wanted. This couldn’t be further from the truth, and the day ended up being quite a bittersweet victory. Like for many artists into the doujin/otaku sphere, it’s important to note down the socially ambitious aspect of the event. But don’t worry. Despite those hardships, this is an event for people like you, hosted by people like you. I think that the biggest ordeal through all this is to keep the pressure down to the minimum so you don’t burnout like I did back then.
@@ -23,10 +26,32 @@ Almost all hardships can easily be dealt with ahead of time through tighter sche
 
 Had I gone more prepared and had more knowledge about tiny details people tend to not mention, things could have been much easier to deal with. This is why I’m making this guide in the first place, so that overseas newcomers don’t have to suffer through trial and error like I did.
 
-## Organization, Timing, Mapping
+# General Advice for Non-Participants
+This blogpost is mostly aimed at circle participants, but I'm aware a lot of doujin music fans would like to know more about how it feels to be a general attendant rather than a participant, so I will do a little list of important advice which will apply to most people going to M3, and not just participants. Do note that I've never participated as a guest, so I will rely on general advice I've heard from people over the years.
+## Bring Cash
+As internet transactions become the norm all over the world, Japan still holds dearly to cash. Doujin Events are not exempt of that. Most prices will be in rounded numbers of 500, so **make sure to bring a lot of 500 yen coins and 1000 yen bills**. Internet transactions are not so rare (mostly just PayPay though, rarely PayPal), but most booths will operate strictly on cash. It would help to also learn some basic Japanese transaction talk too, so that you won't have to stare at a sheet of paper to be aware of an album's price. Not to worry, though. After a few purchases, "(ni/san) sen (go-hyaku) en onegaishimasu" will be engraved in your brain.
+## Prepare to Wait
+It's heavily discouraged to arrive *too* early out of respect for the M3 Staff. Remember that the event starts fairly early (~10AM) and doesn't last long (until ~3PM) though, and depending on who you'd like to meet, you might have to do some waiting around - especially if you're unlucky and have a big line ahead of you with some very limited items of your favorite artists. Also: be wary of the weather. Nobody wants to wait outside and come in after 30 minutes of pounding rain. Umbrellas take a lot of space and are cumbersome, so as far as they are not outright banned, the M3 comitee advises people to bring in a raincoat instead.
+## Behave... well, normally.
+"duh", you might say, but be aware of your surroundings and especially people. Don't just walk aimlessly and bump into booths or people, learn how to read a line of people waiting at a booth, and be wary that you might have to wait a while at some of the most popular booths. Don't be obnoxious and stay respectful.
+## Respect Artists' Privacy
+Most artists are cool with photos so long as they stay within private safekeeping. Do not EVER share pictures of artists online, unless you have their explicit permission to do so. Just so you know: to avoid long lines, popular circles tend to request people to ask for autograph some time after noon, when things generally quiet down. So make sure to make a note of that in your route/planning
+## Map things out
+I talk about planning out a schedule/route in further details below, but do note that only participants can freely go from one booth to another without waiting. So, make sure to sweep through each building/floor one by one and avoid unecessary backtracking.
+# Organization, Timing, Mapping
 At this time, the event still happens at Tokyo Ryuutsu Center. You can try to look up information about it, but it feels like even in Japanese, it’s a living NIGHTMARE to figure out any sort of proper visual guide about what to expect of the overall structure. The map itself of the two buildings somewhat helps, sure, but it’s the outside structure of the center that’s a headache to properly understand.
-
-## Your Participant Package
+## Help! I've been reincarnated as a doujin fan in the west, and I can't figure out the architecture of Tokyo Ryutsu Center?!
+Well you're not alone. Trying to understand that weird configuration of two seperate buildings is one hot mess. As much as the Second Exhibition Hall (第二展示場) is not too complicated to understand despite its two floors construction, the First Exhibition Hall (第一展示場) is kind of a nightmare to understand. They don't actually tell you this on most floor maps you'll receive/see online, but the first hall (building) actually HAS TWO FLOORS. **The first floor is actually generally unnocupied, and you need to completely ignore it. The action is on the 2nd floor.** The two buildings are also connected, but noone (even the circle participations) can  navigate through the 2nd floors of each respective building. Not sure why, probably due to the possible high traffic/maintenance, but that's how it is. Therefore, if you're on the 2nd Building 2F, and wish to go to the 1st Building (2F), you will have to go all the way down to the initial entry/exit and out of the building, and walk all the way to the 1st building entrance.
+![Astro](https://fivda.s-ul.eu/zzgoZD5J)
+So long as you understand that the left building is the first one, right one is 2nd, and it's all fresh out of the station, you should be able to understand what to do. I just learned this year that apparently, the "main" entrances are participants only, and the guest entrance is actually the long way around. Be careful. However, if you're a participant, you can take whichever entry you want. When you see the map, things become a bit clearer: The long way around has a long slope reaching out to the 2nd floor of the first building *directly*, whereas the front entrance (participants only) leads into the 1st floor. But DON'T GET DUPED.
+![Astro](https://fivda.s-ul.eu/1slG2Yrm)
+I got lost for what felt like hours when I got through there and could not know where to go for the life of me. At the crossroad, turn left towards the big escalator. Once up, it'll be right in front of you.
+![Astro](https://fivda.s-ul.eu/xa9mY6Jn)
+This is only something to worry about as a participant. Guests have to take the long way around the 1st building and take the slope up to the 2nd floor directly.
+![Astro](https://fivda.s-ul.eu/h1aiDIP3)
+The picture above provides references on where the 1st and 2nd floors of the 2nd building are when you're in the guest front entrance of the 2nd building. Which is pretty straightforward, really.
+For reference, <u>[here are the M3-2025 Fall maps](https://fivda.s-ul.eu/rKISUDLk)</u> scanned that were provided to circle participants. It's much more in depth than what I've seen being available online. You may want to Google lens those to get a better grasp of it all. If my heart is in it I might do an english translated version one day.
+# Your Participant Package
 
 ![Astro](https://fivda.s-ul.eu/dDGJ4CvI)
 
@@ -35,7 +60,7 @@ A few days (weeks?) before the event, you should normally receive an A4 sized pa
 - A mat A4 page containing information about the event, and most importantly, your entry bracelets. The amount of staff entry bracelets seems to vary from one event to another. For M3-2025 Fall, it was 3 bracelets in our case. Apparently you can ask for more before the event, but you have to pay an extra. The back side of the page also has a few tickets which you use for the CD listening room for advertising. We didn’t use it, so I will not mention it in this guide for now. It helps, but it’s not mandatory.
 - A folded A3 map of the venue. I’m not sure how much the plan changes across years, but either way, I strongly recommend you to not hesitate and to go ahead and actually write anything meaningful on there. Honestly, you may as well just put the circle names you’re interested in, hell, maybe even plan and scribble a route ahead of time to save as much time as possible when you’ll use it. Physically navigating isn’t that hard, but it’s easier when you can mentally map ahead of time.
 
-## Physical Material
+# Physical Material
 This is a real event, and that means real physical preparation. Remember that you’ll be at an event site, with a lot of people, not much room or space, and you will need to come prepared and have everything you need on hand so you don’t catch yourself missing important material which might put you in an awkward position. I will first be mentioning a list of items, and will be detailing the reason and how to provide for them down below.
 - Lightweight backpack
 - Portable pouch or wallet
@@ -51,7 +76,10 @@ This is a real event, and that means real physical preparation. Remember that yo
 - A suitcase for most things, including your CDs
 For a lot of these, I assume you are already in Japan. Thankfully, it’s actually easier to get those in the country than bringing it over, for even cheaper than going to Amazon and whatnot, ordering stuff you’re not even sure is a good fit for what you’re looking for.
 
-## Table Preparation
+# Spare Cash Is Primordial
+When it comes to payment, you may imagine that you should fix your products with round numbers (such as 500, 1000, 1500, 2000… and so on) to avoid change complications. Make sure to come over with a good 10~30 coins of 500 yen coins for change, and maybe even a good bunch of 1000 yen bills in case some people come over to you with 10,000 yen (of course not very frequent, but it happens). Speaking of prices, make sure to make them visible. Feel free to put the prices up with cardboard stands somewhere visible on your table, with a big A3 piece of printed paper displaying your prices in front of the table, or even both. You can also put paper stands in front of each album pile if you want to do it old school. Important note though: You may want to focus japanese in your price sheets. Yes, some overseas non-jp speaking fans will be happy to be able to read your prices, but it’s still an event taking place in Japan with a Japanese audience in mind. Therefore, avoid english/latin on posters as much as possible, and focus on kana/katakana rather than english. Nothing stops you from displaying information in English either, but Japanese readability needs to take priority.
+
+# Table Preparation
 There is no hard rule for this - it’s your circle, your style, your way of doing things. The standard is really as simple as a table that displays products, their price, and that’s it. You just present it all as you wish. There is no real good or bad way to do it, it’s up to your tastes, and what you think you would like to see as a consumer. Before you actually go and prepare your table during your event prep, I would recommend trying to prepare the “ghost” layout of what you plan on showing around before the event so you can anticipate what you’ll show off, and with which items/tools and overall presentation.
 
 ![Astro](https://fivda.s-ul.eu/ClGOGUUI)
@@ -64,47 +92,45 @@ As you can see, there’s quite a lot going on here - it’s not the worst prese
 
 A tablecloth is always good for protecting your goods and having a neat more modernized look to your presentation. You can use a napkin if you want, or anything that gets the job done really. If you have the budget you can order customized ones, but I think it’s only worth it if you plan on participating in more events than just the one.
 
+## Make Your Booth Visible
 A banner for your circle is super important, but so is the pole that will properly hold it out for all to see. Make sure your banner dimensions are right and adapted for your pole too, and that’s why you should probably invest in something durable. It’s on the more expensive side of things when it comes to presentation, but trust me, a background banner will make things SO much easier for people to properly localize your booth. You don’t need to make a brand new banner every single event - you can just get something generic that can be reused as many times as you want. Or, if you got the budget, go ahead and have fun designing something with your booth number in mind while at it, while displaying some of your brand new album’s art. Maybe even put prices and your catalog on there, do what you want. **Be careful though - Japan loves unconventional sizes for all kinds of things. Daniel made the Kodama+RBL banner in France, and it was a horizontal one, instead of the much more standardized vertical banner found in Japan.** NForza saved our butts by bringing over a pole for us ahead of time, but if it wasnt for his kindness, we would have been left with a stupid banner to put up in front of the desk instead of being properly displayed. Which does work, but it will be much harder to spot from afar. Don’t waste it.
-
+## Make Your Booth Fun to Interact With
 If you own a tablet, and have the space to accommodate it, it’s definitely a nice way to attract customers. Either put your album’s prices on there, your circle’s information, or even better, a constantly running playlist of your new album crossfades. Even better, have a headset as accessible as possible for people to listen to. I didn’t actually spot anyone using the headset though, but i think it’s because we didn’t make it clear enough that people can freely use it. I greatly recommend you to leave a little message or paper that says “Try me!” to insist that people can use it. Once people have used the headset, do remember to clean it with some hygienic paper towels.
-
+## Make Your New Releases Shine
 If you have any past releases before your new ones (in this case here: ECLECTIC RESONANCE PARADISE, Lapis Lazuli and Phantasmal Metamorphosis), I strongly recommend putting those on the back, and you don’t need to bother putting those up with a facing copy. Save space, try to align those symmetrically, and pile them up instead. Saves space, you’ll have plenty of stock, and don’t worry, a nice pile of 10+ copies is bound to bring some attention from people. Bring the attention forward to your new releases instead - put those as close from the edge of the table as possible, as those are the ones that are going to be in reach of anyone to pick a copy from.
 
 I also recommend having the display facing copy unwrapped (keep that one for yourself later, don’t sell it like that of course), so that people can look at the full product. That’s even more important in the case of compilations, and if the album’s back’s artist list is partially hidden because of the obi (i speak from experience…).
-
-When it comes to payment, you may imagine that you should fix your products with round numbers (such as 500, 1000, 1500, 2000… and so on) to avoid change complications. Make sure to come over with a good 10~30 coins of 500 yen coins for change, and maybe even a good bunch of 1000 yen bills in case some people come over to you with 10,000 yen (of course not very frequent, but it happens). Speaking of prices, make sure to make them visible. Feel free to put the prices up with cardboard stands somewhere visible on your table, with a big A3 piece of printed paper displaying your prices in front of the table, or even both. You can also put paper stands in front of each album pile if you want to do it old school. Important note though: You may want to focus japanese in your price sheets. Yes, some overseas non-jp speaking fans will be happy to be able to read your prices, but it’s still an event taking place in Japan with a Japanese audience in mind. Therefore, avoid english/latin on posters as much as possible, and focus on kana/katakana rather than english. Nothing stops you from displaying information in English either, but Japanese readability needs to take priority.
-
+## Don't Get Lost with your Sales
 And finally, you need to keep track of sales. Just use some paper and a sharpie, and list all of your albums and keep track of them as you like. There’s no right way to do it, but keeping track of sales and giveaways is very important for you to stay in touch with your remaining stock, and of course, your profit.
 
 Do yourself a favor and make sure there’s nothing useless hanging around your table - try to remove anything that the consumer isn’t supposed to be interested in. Keep some pens nearby, but that should be it.
 
-
-## You can’t do this alone
+# You can’t do this alone
 Do not underestimate M3. You WILL need a partner for this event, even if you’re not anticipating a lot of traffic at your booth. If you are on your own, you can’t really leave your table empty, because you’re at risk of missing potential customers. So, you absolutely need an assistant if you plan on roaming around to meet other artists at different booths/floors. And it’d be a shame if you didn’t. Taking turns with a partner to hold onto the table and sales is ideal, as it gives you much more breathing room and much less stress to do your own business throughout M3. Overall, you NEED a proper schedule ahead of time, and you need to be able to improvise depending on how things are going.
 
-## Schedule!
+# Schedule!
 Personally, I think it’s good to discuss ahead of time with your partner at which times you will be holding onto the booth, and do everything in one streak or two (depending on how busy you are and how talkative you are with people). If you’re just here to buy albums and not discuss much, it might just take a little hour for you to do the whole tour of the three event floors, especially if you have the participant bracelet which lets you easily navigate through. If you plan on discussing, signing albums, exchanging business cards… It can take much more time. In that case, I’d suggest you to do two runs: one for one building (probably the one you’re not holding your booth in), and another run for the other building (the one you’re already in would be easier and much less moving around if you’re low on stamina and near the end of the event). It’s unfortunately something you have to learn with practice, and even then, you won’t be able to perfectly do everything you wanted to do - either way, make sure to have a timetable of who’s doing what at whichever hour of the day, so that you can lay back and do your business while your friend is holding onto the booth for you - and the other way around too.
 
-## Time is a finite ressource
+# Time is a finite ressource
 I think this is something I cannot for the life of me stress enough. The event is really, really short, especially for western standards. The building already empties itself out before it’s even 3pm, and there won’t be any sort of announcement to tell you when it’s going to be over. Some booths stop activity even earlier than that. So, make sure you do anything urgent and to focus on “rare” artists/albums before the afternoon starts. Of course, nothing stops you from hanging out with other people afterwards, it’s common practice. But, you won’t be able to just go to an izakaya/for sushi with every friend and artist you love all at once. You’re going to have to compromise, and I recommend organizing after parties with whoever you are most interested to hang out with BEFORE the day of the event so that it can be settled (that way, you won’t need to spend much time at their booth either!).
 
-## KEEP. THINGS. OFFLINE.
+# KEEP. THINGS. OFFLINE.
 I cannot stress this enough, but you need to realize how unreliable the network and data in TRC is. Sometimes works for minutes, or maybe hours, sometimes goes completely unresponsive. Sometimes it’s a specific zone in whichever of the two buildings and floors, and it’s just a mess to deal with. Try to keep up online as much as you can whenever you do gain access, but so long as the data is this terrible in TRC, you need to realize that you will be on your own most of the time and mostly unable to properly contact anyone whatsoever. Use your visual (downloaded and offline) map to figure out where you are and where to go to lose as little time as you possibly can, and keep in touch with your peers. This is why I strongly recommend you to stay put in just one place, and to do your browsing business at a specific time just once, and then you should stay put at your own booth in case people are looking for you. Make sure to let people know BEFORE the event about the place you will be at, and especially, when, and to stick to it. If there’s anyone you specifically aim to interact with, keep up with them beforehand too - try to make a good offline note of people’s whereabouts so that you won’t miss out on the important stuff, so that you don’t miss them when you pass by, and so that they don’t miss you when you’re out strolling. But also, there’ll always be a mismatch in timing with at least one person for sure, it’s kind of inevitable. You have to accept it, and buy them a drink after the event and catch up on the lost memories to make new ones.
 
-## General Advices
+# General Advices
 Here is a list of general advice that I recommend.
-### Bring something (light) to eat, and a decent supply of water (and important meds you might need)
+## Bring something (light) to eat, and a decent supply of water (and important meds you might need)
 It’s one of those unwritten rules, and if you break it, people might stare at you funny, but it’s also not the end of the world - but yes, Japanese people tend not to really eat outside while walking, or inside for that matter. I don’t think I’ve seen anyone even eat anything at the venue, even snacks. But trust me, you need the calories and energy, and don’t let manners tell you otherwise. My girlfriend bringing me this Lawson chicken piece at 10am saved my ass, though I wouldn’t recommend bringing in warm, greasy, or smelly food for obvious reasons (I remember almost hiding it while eating like I was going to get scolded for fulfilling basic nutritional needs, lol). Either way, Lawson is bound to be packed as hell, and I wouldn’t even recommend counting on it for food. It just seems like a waste of time. Honestly, onigiris or a calorie mate are simple enough as it’s all cold food that does give you a neat enough supply of calories before your crazy outing of the evening with other fellow DTMers. No one will be yelling at you for eating something during some quiet time at your table. Bring a good 1L of water with you so you don’t catch yourself dying of thirst too.
-### Speak Japanese (…or have someone speak it for you at all times)
+## Speak Japanese (…or have someone speak it for you at all times)
 Yeah I know, it hurts to read. But yes, flash news, going to a Japanese event without speaking Japanese means difficulties! I learned that the hard way, but that was also the breaking point that convinced me that I needed to practice the language seriously so I can actually enjoy M3 to the max. As much as a lot of artists do understand super basic English, your conversations are not going to go very far. And come on, do you really want to fly thousands of kilometres to see artists you’ve admired all your life, all for you being completely unable to communicate properly with them? Make this occasion count. …Or you can just have a fluent Japanese friend there to interpret things for you. But even something like this is awkward, especially if you’re left on your own to browse the venue.
-### Have business cards ready (meishi)
+## Have business cards ready (meishi)
 Not only are they cool to have and show some professionalism, but they serve well for communicating who you are to other people - even more so when you do not speak Japanese. Present those the old fashioned way, and artists will gladly accept your card (and give you theirs, if they have any). It’s good for networking and introducing yourself, and it’s a good idea to leave a stack of cards on the side of your table for anyone to pick up and keep. Also, remember, Japanese people love annoyingly unconventional sizes. Their cards are actually slightly bigger, so if you got a card holder, make sure that it fits Japanese card size standards and not just the more standardized western business card format.
-### Wear comfortable clothes
+## Wear comfortable clothes
 Don’t be eccentric, wear simple clothes you can easily navigate in and easily remove layers from. I understand wanting to dress up for the occasion, but avoid dresses and skirts which do not have pockets. Balancing style and convenience is ideal, but this isn’t a fashion guide - just don’t overdo it. When it comes to temperature, I remember it being super warm and humid even in fall, but that was due to the weather being slightly rainy and my overall tolerance for heat being extremely low, on top of wearing a pretty warm ensemble. It was still tolerable. Just open yourself to clothes that you can easily adapt with.
-### Bring a suitcase, or even two
+## Bring a suitcase, or even two
 CDs sure are heavy and take up a lot of space. Most people bring in suitcases, as no one wants to stroll around with a full 20+kg box filled with jewel cases inside. Do yourself a favor and make sure to leave some room for the CDs you will bring back with you as well, since I assume you will get personal purchases/gifts/trades even if you don’t sell out on everything you’re bringing over.
-### Think about gifts and trades!
+## Think about gifts and trades!
 There’s nothing more heartwarming than gifts, and the scene is no stranger to it. It’s very common for artists to simply give away albums to you out of respect, and although it’s not always implied, it’s always a nice gesture to give something back in return. Therefore, make sure to keep some CDs on the side to give to artists, friends and collaborators.
 
-## Closure
+# Closure
 For now, that’s about it! If you at least are aware of the potential problems which might surface, you’re already more ready than I could be last year. Please look forward to it if you’re going someday and have the fun you deserve!
