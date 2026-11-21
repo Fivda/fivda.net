@@ -36,6 +36,8 @@ const about = '/' + Astro.currentLocale + '/about'
 
 const blog = '/' + Astro.currentLocale + '/blog'
 
+const translations = '/' + Astro.currentLocale + '/translations'
+
 
 
 const socials = ["mailto:fivda@protonmail.com", "https://x.com/Fivda_", "https://bsky.app/profile/fivda.bsky.social", "discord: Fivda", "https://www.youtube.com/c/Fivda", "https://soundcloud.com/fivda/", "https://fivda.bandcamp.com", "https://www.mixcloud.com/Fivda/", "https://open.spotify.com/artist/75Kv4UNjg8e2WYti6AT4VM", "https://music.apple.com/artist/fivda/1683189527", "https://www.deezer.com/artist/210299767", "https://www.instagram.com/fivda_", ]
@@ -86,12 +88,12 @@ const socials = ["mailto:fivda@protonmail.com", "https://x.com/Fivda_", "https:/
 								{t('nav.blog')}
 							</NavigationMenuLink>
 						</NavigationMenuItem>
-						{/*<NavigationMenuItem value="translations">
-							<NavigationMenuLink href="/translations" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
-								Translations
+						<NavigationMenuItem value="translations">
+							<NavigationMenuLink href={translations} class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
+								{t('nav.translations')}
 							</NavigationMenuLink>
 						</NavigationMenuItem>
-						<NavigationMenuItem value="commissions">
+						{/*<NavigationMenuItem value="commissions">
 							<NavigationMenuLink href="/commissions" class={navigationMenuTriggerStyle()} class="bg-none p-4 hover: hover:bg-yellow-700/30 focus:bg-yellow-700/30">
 								Commissions
 							</NavigationMenuLink>
