@@ -1,27 +1,64 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from "./ui/navigation-menu";
+import { NavigationMenuItem, NavigationMenuLink } from "./ui/navigation-menu";
+import { navigationMenuTriggerStyle } from "./ui/navigation-menu";
 
 const locales = {
-	'fr': 'French',
-	'en': 'Anglais',
+  fr: 'Français',
+  en: 'English',
+};
+
+const currentLang = Astro.currentLocale || 'en';
+
+const normalize = (p: string) => '/' + p.replace(/^\/+|\/+$/g, '');
+
+// Toutes les routes qui existent réellement
+const pageFiles = import.meta.glob('/src/pages/**/*.{md,mdx,astro}');
+const existingRoutes = new Set(
+  Object.keys(pageFiles).map((file) =>
+    normalize(
+      file
+        .replace('/src/pages', '')
+        .replace(/\.(md|mdx|astro)$/, '')
+        .replace(/\/index$/, '')
+    )
+  )
+);
+
+// Segments du chemin courant sans le préfixe de langue
+// ex: /en/blog/mon-post/ -> ['blog', 'mon-post']
+const segments = Astro.url.pathname
+  .replace(new RegExp(`^/${currentLang}(?=/|$)`), '')
+  .split('/')
+  .filter(Boolean);
+
+// Trouve la page la plus proche qui existe dans la langue cible
+function resolveTarget(lang: string) {
+  const segs = [...segments];
+  while (segs.length > 0) {
+    const candidate = normalize(`/${lang}/${segs.join('/')}`);
+    if (existingRoutes.has(candidate)) {
+      return { href: candidate + '/', exact: segs.length === segments.length };
+    }
+    segs.pop(); // on remonte d'un niveau : /blog/mon-post -> /blog
+  }
+  // Dernier recours : l'accueil de la langue cible
+  return { href: getRelativeLocaleUrl(lang, '/'), exact: segments.length === 0 };
 }
 
-// Get current language and current path
-const currentLang = Astro.currentLocale || 'en';
-const currentPath = Astro.url.pathname
-const pathWithoutLang = Astro.url.pathname
-
-  .replace(`/${currentLang}/`, '/')  // Remove language prefix
-  .replace(/^\//, '');  // Remove leading slash
+const links = Object.entries(locales)
+  .filter(([lang]) => lang !== currentLang)
+  .map(([lang, label]) => ({ lang, label, ...resolveTarget(lang) }));
 ---
 <NavigationMenuItem value="switch">
-{Object.entries(locales).filter(([lang]) => lang !== currentLang).map(([lang, label]) => {
-      const href = `/${lang}/${pathWithoutLang}`
-      return (
-        <NavigationMenuLink href={href} class={`${navigationMenuTriggerStyle()} ${lang === currentLang ? 'active' : ''}`} class="bg-none p-4 font-bold bg-yellow-900/50 hover:bg-yellow-700/30 focus:bg-yellow-700/30">
-			{label}
-		</NavigationMenuLink>
-      );
-    })}
+  {links.map(({ lang, label, href, exact }) => (
+    <NavigationMenuLink
+      href={href}
+      hreflang={lang}
+      title={exact ? undefined : `Cette page n'est pas disponible en ${label}`}
+      class={`${navigationMenuTriggerStyle()} bg-none p-4 font-bold bg-yellow-900/50 hover:bg-yellow-700/30 focus:bg-yellow-700/30`}
+    >
+      {label}
+    </NavigationMenuLink>
+  ))}
 </NavigationMenuItem>
