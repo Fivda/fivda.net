@@ -39,6 +39,6 @@ export const ui = {
     'index.progress': `Ce site est en construction, et d'autres pages seront ajoutées dans le futur.`,
     
     'blog.title': 'Derniers Blogposts',
-    'blog.empty': 'Rien à voir ici.'
+    'blog.empty': 'Rien à voir ici.',
   },
 } as const;
