@@ -1,0 +1,79 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import ImageAstroComponent from '@/components/ui/image/image.astro';
+
+import lisaBanner from "@/images/lisa_banner.webp"
+import lisaJoyBtn from "@/images/lisaJoy button.png"
+import lisaPainBtn from "@/images/lisaPain button.png"
+import steamBtn from "@/images/steam button.png"
+
+
+
+import translations from "@/data/translations.json";
+
+import { Section, SectionProse, SectionActions, SectionContent } from '@/components/ui/section';
+import SectionContent from '@/components/ui/section/section-content.astro';
+import Button from '@/components/ui/button/button.astro';
+import { Image } from 'astro/components/Image.astro';
+
+import { YouTube } from 'astro-embed';
+
+function useTranslations() {
+  for (let i = 1; i <= 5; i++) {
+    // modified code here
+    if (translations.description[i]) {
+      return {
+        description: translations.description[i]
+      };
+    }
+  }
+}
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<Section class="h-1/4 bg-cover bg-center bg-no-repeat" style={`background-image: url(${lisaBanner.src})`}>
+	</Section>
+	<Section style={"background-color: #A27F50"} class="gap-8 flex flex-row items-center justify-center p-4 px-24">
+		<SectionContent class="text-justify">
+			<ul>
+				{Array.from({length: 5}, (_, i) => i + 1).map(i => (
+					<li key={i}>{translations.description[i]}</li>
+				))}
+			</ul>
+			<YouTube id="https://www.youtube.com/watch?v=1M9I34DQ2yM"/>
+		</SectionContent>
+	</Section>
+	<Section style={"background-color: #A27F50"} class="gap-8 flex flex-col items-center justify-center p-4 px-24">
+		<h1 class="text-2xl">Liens :</h1>
+		<a href="http://store.steampowered.com/app/335670/LISA/?l=french">
+			<ImageAstroComponent class="w-auto h-auto rounded-2xl" src={steamBtn} />
+		</a>
+		<a href="/downloads/Painful.zip" download="Lisa The Painful 1.4.zip">
+			<ImageAstroComponent class="w-auto h-auto rounded-2xl" src={lisaPainBtn} />
+		</a>
+		<a href="/downloads/Joyful.zip" download="Lisa The Joyful 1.4.zip">
+			<ImageAstroComponent class="w-auto h-auto rounded-2xl" src={lisaJoyBtn} />
+		</a>
+	</Section>
+	<Section style={"background-color: #A27F50"} class="text-justify gap-8 flex flex-col items-center justify-center p-4 px-24">
+		<p class="font-bold">Merci à tous pour avoir suivi la traduction de LISA : The Painful !</p>
+		<p>Il y a un an, créer une traduction de LISA n’était pour moi qu’un petit rêve passager. Puis les mois passèrent, et toujours pas un seul projet de traduction français à l’horizon. C’est à ce moment que je me décidai enfin à m’y mettre. Ce n’était pas très facile au début, mais plus j’avançais dans le projet, plus je me rendais compte que ce n’était pas qu’une utopie. Il ne s’agit pour moi pas que d’une simple satisfaction personnelle, c’est un moment sacrément important de ma vie. Ce projet m’a permis d’acquérir une plus grande confiance en moi et ma capacité à terminer quelque chose qui me tient réellement à cœur : Créer quelque chose que les autres pourront apprécier grâce à mes efforts. Il n’y a rien de plus satisfaisant que de savoir que j’ai pu contribuer à cette excellente et unique oeuvre qu’est LISA. Merci à Austin Jorgensen, et tout ceux qui m’ont aidé à rendre ce projet possible.</p>
+	</Section>
+	<Section style={"background-color: #A27F50"} class="gap-8 flex flex-col items-center justify-center p-4 px-24">
+		<h1 class="text-2xl">Crédits :</h1>
+		<ul class="list-disc underline text-left">
+			<li><a href="https://twitter.com/COMETandCROW">Austin Jorgensen</a></li>
+			<li><a href="https://twitter.com/Dwimepon">Dwimepon</a></li>
+			<li><a href="https://twitter.com/InstantFruitey">a</a>InstantFruitey</li>
+			<li><a href="https://twitter.com/DevilW0lf">DevilWolf</a></li>
+			<li><a href="https://twitter.com/Ledgyworth">Ledgyworth</a></li>
+			<li><a href="">a</a></li>
+			<li><a href="">a</a></li>
+			<li><a href="">a</a></li>
+		</ul>
+	</Section>
+</Layout>
+
